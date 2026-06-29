@@ -27,3 +27,7 @@ I like small, sharp utilities: one job each, minimal dependencies, tests and CI 
 
 ### Background
 20+ years across devices, cloud, and ML — biometrics & sensing at Motorola/Google/Lenovo, real-time services at Amazon Alexa scale, and ML-platform / data-science work at SpotHero and Apple. ~50 granted patents.
+
+---
+
+Find me on [LinkedIn](https://linkedin.com/in/sudhirvissa).
