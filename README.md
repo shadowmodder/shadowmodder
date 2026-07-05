@@ -13,7 +13,7 @@ Bug fixes shipped to production ML/LLM libraries. Open PRs tracked at [PORTFOLIO
 <!-- PR-STATUS-START -->
 | PR | Repository | Description | Merged |
 |---|---|---|---|
-| *(none merged yet — 9 open PRs in review)* | | | |
+| *(none merged yet — 10 open PRs in review)* | | | |
 <!-- PR-STATUS-END -->
 
 ---

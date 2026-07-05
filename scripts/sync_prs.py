@@ -13,10 +13,11 @@ PRs = [
     ("BerriAI/litellm", 32199, "`reasoning_tokens` forced to `0` in Responses API proxy"),
     ("BerriAI/litellm", 32200, "Async cache streaming drops `reasoning_content`"),
     ("BerriAI/litellm", 32205, "`previous_response_id` double-encoded in MCP tool loops"),
-    ("langchain-ai/langchain", 38680, "Streaming tool call fires prematurely with empty args"),
     ("huggingface/peft", 3391, "`update_and_allocate` unreachable after `inject_adapter_in_model`"),
     ("huggingface/trl", 6297, "NaN logprobs crash in GRPO trainer with vLLM importance sampling"),
     ("567-labs/instructor", 2412, "`Optional[NestedModel]` fields stored as raw dicts in streaming partials"),
+    ("stanfordnlp/dspy", 9979, "MIPROv2 silently discards hand-labeled demos — proposer sees no task demos"),
+    # LangChain: pending maintainer assignment (issue #38679) — no PR to track yet
 ]
 
 HEADERS = {"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"}
