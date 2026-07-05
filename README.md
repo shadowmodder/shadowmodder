@@ -8,20 +8,12 @@ Machine-learning engineer focused on the parts that actually decide whether ML w
 
 ### Upstream contributions
 
-Bug fixes shipped to production ML/LLM libraries. Status syncs automatically each day.
+Bug fixes shipped to production ML/LLM libraries. Open PRs tracked at [PORTFOLIO.md](https://github.com/shadowmodder/shadowmodder.github.io/blob/master/PORTFOLIO.md). Table below updates automatically each day — merged PRs appear here once landed.
 
 <!-- PR-STATUS-START -->
-| PR | Repository | Description | Status |
+| PR | Repository | Description | Merged |
 |---|---|---|---|
-| [#3913](https://github.com/EleutherAI/lm-evaluation-harness/pull/3913) | [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | ECE + RMS calibration metrics | 🟢 Open |
-| [#2816](https://github.com/vibrantlabsai/ragas/pull/2816) | [ragas](https://github.com/vibrantlabsai/ragas) | NDCG, MRR, Precision@K, Recall@K retrieval metrics | 🟢 Open |
-| [#32198](https://github.com/BerriAI/litellm/pull/32198) | [litellm](https://github.com/BerriAI/litellm) | `stream_chunk_builder` KeyError on missing `choices` | 🟢 Open |
-| [#32199](https://github.com/BerriAI/litellm/pull/32199) | [litellm](https://github.com/BerriAI/litellm) | `reasoning_tokens` forced to `0` in Responses API proxy | 🟢 Open |
-| [#32200](https://github.com/BerriAI/litellm/pull/32200) | [litellm](https://github.com/BerriAI/litellm) | Async cache streaming drops `reasoning_content` | 🟢 Open |
-| [#32205](https://github.com/BerriAI/litellm/pull/32205) | [litellm](https://github.com/BerriAI/litellm) | `previous_response_id` double-encoded in MCP tool loops | 🟢 Open |
-| [#38680](https://github.com/langchain-ai/langchain/pull/38680) | [langchain](https://github.com/langchain-ai/langchain) | Streaming tool call fires prematurely with empty args | 🟢 Open |
-| [#3391](https://github.com/huggingface/peft/pull/3391) | [peft](https://github.com/huggingface/peft) | `update_and_allocate` unreachable after `inject_adapter_in_model` | 🟢 Open |
-| [#6297](https://github.com/huggingface/trl/pull/6297) | [trl](https://github.com/huggingface/trl) | NaN logprobs crash in GRPO trainer with vLLM importance sampling | 🟢 Open |
+| *(none merged yet — 9 open PRs in review)* | | | |
 <!-- PR-STATUS-END -->
 
 ---
