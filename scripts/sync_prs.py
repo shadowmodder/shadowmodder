@@ -17,6 +17,7 @@ PRs = [
     ("huggingface/trl", 6297, "NaN logprobs crash in GRPO trainer with vLLM importance sampling"),
     ("567-labs/instructor", 2412, "`Optional[NestedModel]` fields stored as raw dicts in streaming partials"),
     ("stanfordnlp/dspy", 9979, "MIPROv2 silently discards hand-labeled demos — proposer sees no task demos"),
+    ("vllm-project/vllm", 47662, "`/v1/responses` endpoint rejects valid `input_audio` parts with 422"),
     # LangChain: pending maintainer assignment (issue #38679) — no PR to track yet
 ]
 
