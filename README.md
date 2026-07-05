@@ -72,9 +72,9 @@ Bug fixes merged into production ML/LLM libraries. Status updates automatically 
 | [#32199](https://github.com/BerriAI/litellm/pull/32199) | [litellm](https://github.com/BerriAI/litellm) | `reasoning_tokens` forced to `0` in Responses API proxy | 🟢 Open |
 | [#32200](https://github.com/BerriAI/litellm/pull/32200) | [litellm](https://github.com/BerriAI/litellm) | Async cache streaming drops `reasoning_content` | 🟢 Open |
 | [#32205](https://github.com/BerriAI/litellm/pull/32205) | [litellm](https://github.com/BerriAI/litellm) | `previous_response_id` double-encoded in MCP tool loops | 🟢 Open |
-| [#38678](https://github.com/langchain-ai/langchain/pull/38678) | [langchain](https://github.com/langchain-ai/langchain) | Streaming tool call fires prematurely with empty args | 🔄 Resubmitting |
+| [#38680](https://github.com/langchain-ai/langchain/pull/38680) | [langchain](https://github.com/langchain-ai/langchain) | Streaming tool call fires prematurely with empty args | 🟢 Open |
 | [#3391](https://github.com/huggingface/peft/pull/3391) | [peft](https://github.com/huggingface/peft) | `update_and_allocate` unreachable after `inject_adapter_in_model` | 🟢 Open |
-| [#6296](https://github.com/huggingface/trl/pull/6296) | [trl](https://github.com/huggingface/trl) | NaN logprobs crash in GRPO trainer with vLLM importance sampling | 🔄 Resubmitting |
+| [#6297](https://github.com/huggingface/trl/pull/6297) | [trl](https://github.com/huggingface/trl) | NaN logprobs crash in GRPO trainer with vLLM importance sampling | 🟢 Open |
 <!-- PR-STATUS-END -->
 
 ---
