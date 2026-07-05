@@ -28,6 +28,8 @@ Small, sharp utilities: one job each, minimal dependencies, tests and CI on ever
 | [prompt-cache-bench](https://github.com/shadowmodder/prompt-cache-bench) | Python | Benchmark prompt caching: cache hit rate, latency delta, cost savings with real measurements |
 | [llm-eval-lite](https://github.com/shadowmodder/llm-eval-lite) | Python | Assertion-based eval harness for LLM/agent outputs; composite checks (AllOf, AnyOf) |
 | [rag-eval](https://github.com/shadowmodder/rag-eval) | Python | RAG pipeline evaluation: chunking strategies, retrieval quality, answer faithfulness |
+| [llm-gateway](https://github.com/shadowmodder/llm-gateway) | Python | Production Anthropic API proxy: token-bucket rate limiting, retry with backoff, cost tracking |
+| [rag-demo](https://github.com/shadowmodder/rag-demo) | Python | End-to-end RAG demo: BM25 + tool-loop agent + faithfulness eval + persistent memory |
 
 ### ML evaluation & calibration
 
