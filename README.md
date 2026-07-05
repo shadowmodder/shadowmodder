@@ -25,6 +25,7 @@ Small, sharp utilities: one job each, minimal dependencies, tests and CI on ever
 | [featurecheck](https://github.com/shadowmodder/featurecheck) | Python | Feature drift (PSI/KS/chi-squared) + schema/null/dtype validation |
 | [idgraph](https://github.com/shadowmodder/idgraph) | Python | Identity/entity graphs from shared signals; surface synthetic-identity rings + risk scoring |
 | [pii-redactor](https://github.com/shadowmodder/pii-redactor) | Python | Detect & redact PII (email, phone, SSN, IP, Luhn-validated cards); custom patterns |
+| [mcp-quickserver](https://github.com/shadowmodder/mcp-quickserver) | Python | MCP server template: tools, resources, and prompts with stdio and SSE transports |
 | [tool-loop](https://github.com/shadowmodder/tool-loop) | Python | Correct agentic tool-use loop: parallel dispatch, error isolation, auto-schema from Python functions |
 | [llm-eval-lite](https://github.com/shadowmodder/llm-eval-lite) | Python | Assertion-based eval harness for LLM/agent outputs; composite checks |
 | [capture-qa](https://github.com/shadowmodder/capture-qa) | Python | Image capture-quality gates (sharpness, exposure, resolution) |
