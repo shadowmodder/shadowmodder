@@ -64,4 +64,4 @@ Small, sharp utilities: one job each, minimal dependencies, tests and CI on ever
 
 ---
 
-Find me on [LinkedIn](https://linkedin.com/in/sudhirvissa).
+Writing at [sudhirvissa.com](https://shadowmodder.github.io) · [LinkedIn](https://linkedin.com/in/sudhirvissa).
