@@ -2,11 +2,11 @@
 
 **AI/ML leader. Founder & CEO, [SAGE7 AI](https://sage7.ai).** I build agents you can trust to act — with money, data and memory — and the teams and platforms behind them.
 
-20+ years leading applied ML: Sr. Director of Data Science at SpotHero, ML platform at Apple, real-time services at Amazon Alexa, biometrics at Motorola/Lenovo. 48 granted patents, 22 papers. Current research: *The Autonomous Agentic Store* (SSRN) and lineage-aware agent memory (IEEE Access).
+Sr. Director of Data Science at SpotHero (built the IQ pricing engine; grew the org from 2 teams to 6), AI/ML leader at Apple, real-time services at Amazon Alexa (wake-word, ASR, TTS and speech-to-intent delivery to a ~1B-device fleet), biometrics at Motorola/Lenovo. 42 granted U.S. patents, 604 citations. Current research: *The Autonomous Agentic Store* (SSRN) and lineage-aware agent memory (IEEE Access).
 
-The longer goal: be the person teams call on the hard AI/ML questions — technical *and* organizational. Which eval to trust, where an agent is allowed to act, what "good" looks like when the model is a moving target. The work below is the proof, not the pitch.
+The longer goal: build, brick by brick, a high-value company that actually helps people and companies with real AI problems. Which eval to trust, where an agent is allowed to act, what "good" looks like when the model is a moving target — those are the questions the company answers, in production. The work below is the proof, not the pitch.
 
-**How I work:** agents draft, a human approves, a narrow actor executes, and the audit line is written before the action. Everything here is a working piece of that argument — the libraries my teams ship with, not demos.
+**How I work:** I run teams the way I run production systems — guardrails that hold under pressure, standards that don't slip when the deadline moves, and execution that lands accurately, without breaking what's already working and without getting blocked. The work below is the proof: libraries my teams ship with, not demos — the eval, the threshold, the memory, the tool loop, the pieces where the decision actually gets made.
 
 [sage7.ai/blog](https://sage7.ai/blog) · [LinkedIn](https://linkedin.com/in/sudhirvissa) · [Technical notes](https://shadowmodder.github.io) · sudhir.vissa@sage7.ai
 
@@ -14,57 +14,11 @@ The longer goal: be the person teams call on the hard AI/ML questions — techni
 
 ### Right now
 
-- **Upstream contributions** — hands-on bug fixes in the LLM/ML libraries production systems actually run on: litellm, vLLM, lancedb, mem0, qdrant-client, weaviate-python-client. Twelve open PRs, two approved — the table below tracks merges as they land.
-- **memharness** — a neutral eval for agent memory, built because vendors grade their own homework. Verified run: 1,986 questions, mean F1 0.416, every question retrieved.
+- **Upstream contributions** — hands-on bug fixes in the LLM/ML libraries production systems actually run on: litellm, vLLM, lancedb, mem0, qdrant-client, weaviate-python-client. Twelve open PRs, two approved — the full record, open PRs through kernel patches, is in the Upstream work section at the bottom.
+- **memharness** — a neutral eval for agent memory, built because vendors grade their own homework. Verified run: 1,986 questions across five task families, every question retrieved.
 - **Papers** — lineage-aware memory governance (IEEE Access) and the autonomous agentic store (SSRN). Selected papers below.
-- **Sage7 AI** — founder & CEO. Building the agent trust boundary: approval loops, audit lines, and memory governance for teams shipping agents in production.
-
----
-
-### Upstream contributions
-
-Bug fixes shipped to production ML/LLM libraries. Open PRs tracked at [PORTFOLIO.md](https://github.com/shadowmodder/shadowmodder.github.io/blob/master/PORTFOLIO.md). Table below updates automatically each day — merged PRs appear here once landed.
-
-<!-- PR-STATUS-START -->
-| PR | Repository | Description | Merged |
-|---|---|---|---|
-| *(12 open PRs in review, 2 approved)* | | | |
-<!-- PR-STATUS-END -->
-
----
-
-### Merged upstream work (commit record)
-
-The table above only tracks the PRs in the sync script. The commit record shows two more merged upstream contributions:
-
-| Contribution | Repository | Date |
-|---|---|---|
-| [fix(providers): retry empty completion choices across handlers](https://github.com/567-labs/instructor/commit/8da7a13f1babc7c8c6c2896b3734f1f1ae5e65b2) — co-authored by shadowmodder; my PR #2864, landed via the maintainer's #2902 | [567-labs/instructor](https://github.com/567-labs/instructor) | 2026-11-05 |
-| [Add Dockerfile](https://github.com/staart/ui/commit/95e2d6dba73aabb0f37f3a236791726cb726b96a) — merged as PR #1131 | [staart/ui](https://github.com/staart/ui) | 2021-05-09 |
-
----
-
-### Kernel & devices (Motorola era)
-
-Before the ML work, I shipped in the Android kernel trees at Motorola — Moto X 2013 (Ghost), Moto X 2015 (Clark, MSM8992), Moto G (MSM8226) and Nexus 6 (Shamu). Authored as `shadowmodder` from my Motorola address (`sid@motorola.com`), under the name strings `Sudhir Vissa`, `Sudhir C Vissa` and `fjdw67`. Each row is one unique change; the last column counts the community trees (forks and branches) still carrying it.
-
-| Patch | Date | Role | Devices / branches |
-|---|---|---|---|
-| [WIFi LFR roaming events from QC](https://github.com/MoKee/android_kernel_motorola_ghost/commit/42905835902165f44bb171524234003cafa8d213) | 2013-04-25 | Authored | 33 |
-| [DTIM 5 Beacon interval](https://github.com/emceethemouth/kernel_ghost/commit/4801399f3c2ecae77d3bdd5f66214fad1e8e9f98) | 2013-10-15 | Authored | 12 |
-| [SBA from QC for SAP Country code](https://github.com/emceethemouth/kernel_ghost/commit/332b038371e8a646759c9df2f888cd4803178f6e) | 2013-10-23 | Authored | 12 |
-| [PNO Sched_scan fix from SR 01332508](https://github.com/DC07/spirit_ghost/commit/ea14913146cd116b55bb56b247ec3e4459b99aa6) | 2013-10-23 | Authored | 13 |
-| [shamu_defconfig: Add BCMDHD configuration](https://github.com/CPA-Poke/android_kernel_moto_shamu/commit/d90bb83164d0ed088430b60c9d020595132e5f7c) | 2014-05-22 | Authored | 237 |
-| [arm: msm: bcm: remove msm_pcie_status_notify](https://github.com/SaberMod/android_kernel_moto_shamu/commit/3cc91bc41a65f01c5daaaadc32e37e4460513429) | 2014-06-03 | Authored | 237 |
-| [8994-bringup-hack: net: cnss: Reset](https://github.com/CyanogenMod/android_kernel_motorola_msm8992/commit/73349158029916d2093a30436bfd817c79ce516c) | 2014-10-23 | Authored | 64 |
-| [8994-bringup-hack arm/dt: 8994: Add gpio 112 to cnss node](https://github.com/CyanogenMod/android_kernel_motorola_msm8992/commit/dcb3858728a2f67b6e9b33cee9fbc7a4657bcb8b) | 2014-10-23 | Authored | 64 |
-| [arm/dt: 8992: Add gpio 112 to cnss node](https://github.com/CyanogenMod/android_kernel_motorola_msm8992/commit/d2976fcd7e97) | 2015-01-08 | Authored | 32 |
-| [additional logging for Clark driver on data stall](https://github.com/HashBang173/qcacld-2.0/commit/12d92b29542b2b20a15cb08c4f9982d67610c2a7) | 2015-04-27 | Authored | 1 |
-| [enable packetlogs from ini for data stall](https://github.com/HashBang173/qcacld-2.0/commit/83a479aaca22c8fb00ce57243b7a6acdb14c68e3) | 2015-04-28 | Authored | 1 |
-| [Add set Roam trigger support](https://github.com/TeamMoskvich/android_kernel_motorola_msm8226/commit/0222a70c39c7933176e4b52fe20fea14bc5e24eb) | 2013-09-11 | Reviewed-by | 61 |
-| [Reading of MAC from UTAG (Clark)](https://github.com/LineageOS/android_kernel_motorola_msm8992/commit/d748b77e92) | 2015-02-13 | Reviewed-by | 35 |
-
-Full list of the upstream commits carrying my name: [GitHub commit search](https://github.com/search?q=%22Sudhir+Vissa%22&type=commits).
+- **Sage7 AI** — founder & CEO. Building the agent trust boundary: approval loops, audit lines, and memory governance for teams shipping agents in production. Client proof: Oracle Fusion AR — 70% of receivables automated, refunds under 24h, errors 12% to under 1%. Shipped 0→1: DocuSpark (production RAG, featured on Product Hunt), eHire (autonomous multi-agent sales workflow).
+- **forgein** — a Claude productivity toolkit I ship ([forgeinai/forgein](https://github.com/forgeinai/forgein)), Pro at $4.99/mo ([app.forgein.ai](https://app.forgein.ai)).
 
 ---
 
@@ -73,15 +27,26 @@ Full list of the upstream commits carrying my name: [GitHub commit search](https
 | Paper | Venue |
 |---|---|
 | [Lineage-Aware Memory Governance](https://arxiv.org/abs/2610.07258) | IEEE Access, Oct 2026 ([DOI](https://doi.org/10.1109/ACCESS.2026.3730363)) |
-| [The Autonomous Agentic Store](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6600538) | SSRN, Apr 2026 |
-| [After Attention](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7516238) | SSRN, Sep 2026 |
-| [IT-IFC](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6955238) | SSRN, Jun 2026 |
+| [The Autonomous Agentic Store: Architecture, Safety Requirements, and a Constitutional AI Deployment Framework for Fully Staffless Physical Retail](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6600538) | SSRN, Apr 2026 |
+| [After Attention: The Economics of Markets Where the Buyer Is an Agent](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7516238) | SSRN, Sep 2026 |
+| [IT-IFC: Ingestion-Centric Information Flow Control for Preventing PII/PCI Leakage in AI-Augmented BI](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6955238) | SSRN, Jun 2026 |
+| Optimizing Large-Scale MLOps Pipelines for Continuous ML Deployment | Hampton Global Business Review, 2025 |
+| The Evolution of Cloud-Native Data Pipelines | Global Business & Economics Journal |
 
 ---
 
 ### Patents
 
-48 granted patents — mostly from the Motorola/Google era (biometrics, sensing, mobile devices), plus one from SpotHero (2024). Example: [Peer-to-peer group re-formation](https://patents.google.com/patent/US9560129B2/en) (US9560129B2, granted 2017). Full list on [Google Patents](https://patents.google.com/?inventor=Sudhir+Vissa).
+42 granted U.S. patents — 604 citations. The number that matters is how often later inventors build on them — the most-cited has been cited by 88 later patents. The work spans biometrics, sensing, location, and audio: the pieces a device uses to know where it is and what its user wants.
+
+| Patent | Cited by |
+|---|---|
+| [Methods and devices for negotiating performance of control operations with acoustic signals](https://patents.google.com/patent/US10902855B2/en) (US10902855B2) | 88 |
+| [Peer-to-peer group re-formation](https://patents.google.com/patent/US9560129B2/en) (US9560129B2) | 55 |
+| [Location correlation in a region based on signal strength indications](https://patents.google.com/patent/US10499194B1/en) (US10499194B1) | 28 |
+| [Electronic device with gesture actuation of companion devices](https://patents.google.com/patent/US10251056B2/en) (US10251056B2) | 18 |
+
+Full list on [Google Patents](https://patents.google.com/?inventor=Sudhir+Vissa).
 
 ---
 
@@ -157,6 +122,46 @@ Small, dependency-light libraries. Each one is the piece of an agentic or ML sys
 
 ### Background
 
-Apple (ML platform, scoring infrastructure, model monitoring) · SpotHero (Sr. Director of Data Science; built the IQ pricing engine) · Amazon Alexa (on-device fingerprinting, real-time services at Alexa scale) · Motorola / Google / Lenovo (Moto Access biometric platform, ~10 years). Georgetown, Texas.
+Apple (AI/ML leader; ML platform architecture, scoring infrastructure, model monitoring) · SpotHero (Sr. Director of Data Science; built the IQ pricing engine; grew the org from 2 teams to 6) · Amazon Alexa (on-device fingerprinting, real-time services at Alexa scale; wake-word, ASR, TTS delivery to a ~1B-device fleet) · Motorola / Google / Lenovo (Moto Access biometric platform, ~10 years). Georgetown, Texas.
+
+Education: M.S. Electrical Engineering (Computer Networking), New Jersey Institute of Technology (3.8/4.0); B.Tech, Electronics & Communication, MCET Hyderabad (3.6/4.0).
 
 Working on agent trust boundaries, agent memory governance or FDE-style AI adoption in your org? [Compare notes](https://sage7.ai/contact).
+
+### Upstream work
+
+Correctness and security fixes in the ML/LLM libraries production systems run on — and the kernel work underneath it all. One record: open PRs, merged work, and the Android kernel patches. Open PRs also tracked at [PORTFOLIO.md](https://github.com/shadowmodder/shadowmodder.github.io/blob/master/PORTFOLIO.md).
+
+| Contribution | Repository | Date | Status |
+|---|---|---|---|
+| [fix(python): fetch minimum rank-fusion window per side in hybrid search](https://github.com/lancedb/lancedb/pull/4772) | [lancedb/lancedb](https://github.com/lancedb/lancedb) | 2026-10-30 | Open — approved |
+| [fix(users): report Go zero time created_at as None for db users](https://github.com/weaviate/weaviate-python-client/pull/2244) | [weaviate/weaviate-python-client](https://github.com/weaviate/weaviate-python-client) | 2026-11-08 | Open — approved |
+| [[Bugfix][Multimodal] Domain-separate content digests and caller uuids in mm hashes](https://github.com/vllm-project/vllm/pull/66473) | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 2026-11-08 | Open — CI ready |
+| [[Frontend][Responses] Reject empty assistant message content with 400 instead of 500](https://github.com/vllm-project/vllm/pull/66475) | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 2026-11-08 | Open |
+| [fix(responses): keep overlong system prompts in input on the chat to responses bridge](https://github.com/BerriAI/litellm/pull/50328) | [BerriAI/litellm](https://github.com/BerriAI/litellm) | 2026-11-05 | Open |
+| [fix(proxy): redact guardrail-blocked request body from spend logs](https://github.com/BerriAI/litellm/pull/50214) | [BerriAI/litellm](https://github.com/BerriAI/litellm) | 2026-11-05 | Open |
+| [test(router): fix direct-call num_retries assertion to match SDK-retry behavior](https://github.com/BerriAI/litellm/pull/49584) | [BerriAI/litellm](https://github.com/BerriAI/litellm) | 2026-11-01 | Open |
+| [fix(local): reject non-object payloads on set/overwrite_payload and collection metadata updates](https://github.com/qdrant/qdrant-client/pull/1661) | [qdrant/qdrant-client](https://github.com/qdrant/qdrant-client) | 2026-11-03 | Open |
+| [[Frontend][Responses] Accept input_audio content parts in user messages (#47659)](https://github.com/vllm-project/vllm/pull/64851) | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 2026-10-30 | Open |
+| [fix: GroundedProposer ignores hand-labeled demos](https://github.com/stanfordnlp/dspy/pull/9979) | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | 2026-07-05 | Open |
+| [feat(metrics): add traditional IR metrics — NDCGScore, MRRScore, PrecisionAtK, RecallAtK](https://github.com/explodinggradients/ragas/pull/2816) | [explodinggradients/ragas](https://github.com/explodinggradients/ragas) | 2026-07-05 | Open |
+| [feat(metrics): add ECE and RMS calibration error metrics](https://github.com/EleutherAI/lm-evaluation-harness/pull/3913) | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | 2026-07-05 | Open |
+| [fix(providers): retry empty completion choices across handlers](https://github.com/567-labs/instructor/commit/8da7a13f1babc7c8c6c2896b3734f1f1ae5e65b2) — co-authored; my PR #2864, landed via the maintainer's #2902 | [567-labs/instructor](https://github.com/567-labs/instructor) | 2026-11-05 | Merged |
+| [Add Dockerfile](https://github.com/staart/ui/commit/95e2d6dba73aabb0f37f3a236791726cb726b96a) — merged as PR #1131 | [staart/ui](https://github.com/staart/ui) | 2021-05-09 | Merged |
+| [WIFi LFR roaming events from QC](https://github.com/MoKee/android_kernel_motorola_ghost/commit/42905835902165f44bb171524234003cafa8d213) | Ghost (Moto X 2013) | 2013-04-25 | Authored · 33 trees |
+| [DTIM 5 Beacon interval](https://github.com/emceethemouth/kernel_ghost/commit/4801399f3c2ecae77d3bdd5f66214fad1e8e9f98) | Ghost (Moto X 2013) | 2013-10-15 | Authored · 12 trees |
+| [SBA from QC for SAP Country code](https://github.com/emceethemouth/kernel_ghost/commit/332b038371e8a646759c9df2f888cd4803178f6e) | Ghost (Moto X 2013) | 2013-10-23 | Authored · 12 trees |
+| [PNO Sched_scan fix from SR 01332508](https://github.com/DC07/spirit_ghost/commit/ea14913146cd116b55bb56b247ec3e4459b99aa6) | Ghost (Moto X 2013) | 2013-10-23 | Authored · 13 trees |
+| [shamu_defconfig: Add BCMDHD configuration](https://github.com/CPA-Poke/android_kernel_moto_shamu/commit/d90bb83164d0ed088430b60c9d020595132e5f7c) | Shamu (Nexus 6) | 2014-05-22 | Authored · 237 trees |
+| [arm: msm: bcm: remove msm_pcie_status_notify](https://github.com/SaberMod/android_kernel_moto_shamu/commit/3cc91bc41a65f01c5daaaadc32e37e4460513429) | Shamu (Nexus 6) | 2014-06-03 | Authored · 237 trees |
+| [8994-bringup-hack: net: cnss: Reset](https://github.com/CyanogenMod/android_kernel_motorola_msm8992/commit/73349158029916d2093a30436bfd817c79ce516c) | MSM8992 (Moto X 2015) | 2014-10-23 | Authored · 64 trees |
+| [8994-bringup-hack arm/dt: 8994: Add gpio 112 to cnss node](https://github.com/CyanogenMod/android_kernel_motorola_msm8992/commit/dcb3858728a2f67b6e9b33cee9fbc7a4657bcb8b) | MSM8992 (Moto X 2015) | 2014-10-23 | Authored · 64 trees |
+| [arm/dt: 8992: Add gpio 112 to cnss node](https://github.com/CyanogenMod/android_kernel_motorola_msm8992/commit/d2976fcd7e97) | MSM8992 (Moto X 2015) | 2015-01-08 | Authored · 32 trees |
+| [additional logging for Clark driver on data stall](https://github.com/HashBang173/qcacld-2.0/commit/12d92b29542b2b20a15cb08c4f9982d67610c2a7) | qcacld-2.0 (Clark) | 2015-04-27 | Authored · 1 tree |
+| [enable packetlogs from ini for data stall](https://github.com/HashBang173/qcacld-2.0/commit/83a479aaca22c8fb00ce57243b7a6acdb14c68e3) | qcacld-2.0 (Clark) | 2015-04-28 | Authored · 1 tree |
+| [Add set Roam trigger support](https://github.com/TeamMoskvich/android_kernel_motorola_msm8226/commit/0222a70c39c7933176e4b52fe20fea14bc5e24eb) | MSM8226 (Moto G) | 2013-09-11 | Reviewed-by · 61 trees |
+| [Reading of MAC from UTAG (Clark)](https://github.com/LineageOS/android_kernel_motorola_msm8992/commit/d748b77e92) | MSM8992 (Moto X 2015) | 2015-02-13 | Reviewed-by · 35 trees |
+
+Before the ML work, I shipped in the Android kernel trees at Motorola — Moto X 2013 (Ghost), Moto X 2015 (Clark, MSM8992), Moto G (MSM8226) and Nexus 6 (Shamu). Authored as `shadowmodder` from my Motorola address (`sid@motorola.com`), under the name strings `Sudhir Vissa`, `Sudhir C Vissa` and `fjdw67`. The Status column counts the community trees (forks and branches) still carrying each change.
+
+Full list of the upstream commits carrying my name: [GitHub commit search](https://github.com/search?q=%22Sudhir+Vissa%22&type=commits).
