@@ -14,15 +14,20 @@ The longer goal: build, brick by brick, a high-value company that actually helps
 
 ### Right now
 
-- **Upstream contributions** — hands-on fixes in the LLM/ML libraries production runs on: litellm, vLLM, lancedb, mem0, qdrant-client, weaviate-python-client. Twelve open PRs, two approved — full record at the bottom.
-- **memharness** — a neutral eval for agent memory, built because vendors grade their own homework. Verified run: 1,986 questions, every one retrieved.
-- **Papers** — lineage-aware memory governance (IEEE Access), the autonomous agentic store (SSRN) — selected papers below.
-- **Sage7 AI** — founder & CEO. Building the agent trust boundary for teams shipping agents in production. Client proof: Oracle Fusion AR — 70% of receivables automated, refunds under 24h, errors 12% to under 1%. Shipped 0→1: DocuSpark (RAG, Product Hunt), eHire (autonomous sales workflow).
-- **forgein** — a Claude productivity toolkit I ship ([forgeinai/forgein](https://github.com/forgeinai/forgein)), Pro at $4.99/mo ([app.forgein.ai](https://app.forgein.ai)).
+| Focus | Now |
+|---|---|
+| memharness | Neutral eval for agent memory — vendors grade their own homework. Verified run: 1,986 questions, every one retrieved |
+| Whitepapers | Lineage-aware memory governance (IEEE Access), the autonomous agentic store (SSRN) — full list below |
+| Sage7 AI | Agent trust boundary for teams shipping agents in production — Oracle Fusion AR: 70% of receivables automated, refunds under 24h, errors 12% to under 1%; shipped eHire (autonomous sales workflow) |
+| DocuSpark | Production RAG app — [docuspark.ai](https://docuspark.ai), featured on Product Hunt |
+| PicNPlay | [picnplay.com](https://picnplay.com) — go-to-market underway, v1.0.4 in App Store review |
+| forgein | Claude productivity toolkit — [forgein.ai](https://forgein.ai), Pro $4.99/mo ([app.forgein.ai](https://app.forgein.ai)) |
+| Also shipped | [basics.ai](https://basics.ai), [irohealth.com](https://irohealth.com), [kidkruz.com](https://kidkruz.com), Verra (HR-compliance platform) |
+| Open-source contributions | 12 open PRs, 2 approved — hands-on fixes to the LLM/ML libraries production runs on: litellm, vLLM, lancedb, mem0, qdrant-client, weaviate-python-client (full record at the bottom) |
 
 ---
 
-### Selected papers
+### Whitepapers
 
 | Paper | Venue |
 |---|---|
@@ -35,9 +40,9 @@ The longer goal: build, brick by brick, a high-value company that actually helps
 
 ---
 
-### Patents
+### IP/Patent portfolio
 
-42 granted U.S. patents, 604 citations. What matters is how often later inventors build on them — the most-cited, by 88. The work spans biometrics, sensing, location, and audio.
+42 granted U.S. patents, 604 citations. What matters is how often later inventors build on them — the most-cited, by 88. The work spans biometrics, sensing, location, and audio — plus cloud and AI.
 
 | Patent | Cited by |
 |---|---|
