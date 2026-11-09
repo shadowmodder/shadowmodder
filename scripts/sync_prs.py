@@ -66,9 +66,9 @@ if merged_rows:
     header = "| PR | Repository | Description | Merged |\n|---|---|---|---|"
     table = header + "\n" + "\n".join(merged_rows)
 else:
-    table = f"| *(none merged yet — {open_count} open PRs in review)* | | | |"
+    table = f"| *({open_count} open PRs in review)* | | | |"
 
-full_table = f"| PR | Repository | Description | Merged |\n|---|---|---|---|\n{chr(10).join(merged_rows)}" if merged_rows else f"| PR | Repository | Description | Merged |\n|---|---|---|---|\n| *(none merged yet — {open_count} open PRs in review)* | | | |"
+full_table = f"| PR | Repository | Description | Merged |\n|---|---|---|---|\n{chr(10).join(merged_rows)}" if merged_rows else f"| PR | Repository | Description | Merged |\n|---|---|---|---|\n| *({open_count} open PRs in review)* | | | |"
 
 with open("README.md") as f:
     content = f.read()
