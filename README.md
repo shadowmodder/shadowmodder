@@ -87,7 +87,7 @@ Full list of the upstream commits carrying my name: [GitHub commit search](https
 
 ### Writing
 
-Essays at [sage7.ai/blog](https://sage7.ai/blog); technical notes at [shadowmodder.github.io](https://shadowmodder.github.io).
+Essays at [sage7.ai/blog](https://sage7.ai/blog); technical notes at [shadowmodder.github.io](https://shadowmodder.github.io); earlier writing on [Medium](https://medium.com/@sid.vissa).
 
 | Post | Tags |
 |---|---|
@@ -99,6 +99,10 @@ Essays at [sage7.ai/blog](https://sage7.ai/blog); technical notes at [shadowmodd
 | [Fine-Tuning vs. Prompting: A Decision Framework That Doesn't Lie to You](https://shadowmodder.github.io/posts/finetuning-vs-prompting.html) | fine-tuning · LoRA · RAG · prompting |
 | [Claude Code Has No Memory. Here's How to Fix That.](https://shadowmodder.github.io/posts/claude-code-memory-persistence.html) | Claude Code · agent memory · persistence |
 | [CLAUDE.md: Everything You Can Put in Claude Code's Memory File](https://shadowmodder.github.io/posts/claude-md-guide.html) | Claude Code · CLAUDE.md · agent memory |
+| [Patenting and Protecting Intellectual Property](https://medium.com/@sid.vissa/patenting-and-protecting-intellectual-property-4266486e2917) | patents · IP strategy · inventions |
+| [Harnessing the Power of Hybrid Generative-Discriminative Models](https://medium.com/@sid.vissa/harnessing-the-power-of-hybrid-generative-discriminative-models-873fb18a71ee) | hybrid models · ML · deep learning |
+| [Making Informed Hiring Decisions for Software Development](https://medium.com/@sid.vissa/making-informed-hiring-decisions-for-software-development-4c1f59fbfbe7) | hiring · engineering management |
+| [Navigating the Data Engineering Space](https://medium.com/@sid.vissa/navigating-the-data-engineering-space-59c7a991340a) | data engineering · tech debt |
 
 Also on [LinkedIn](https://linkedin.com/in/sudhirvissa).
 
