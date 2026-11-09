@@ -1,8 +1,23 @@
 # Sudhir Vissa
 
-Machine-learning engineer focused on the parts that actually decide whether ML works in production — evaluation, calibration, thresholds, drift, identity/fraud signals, serving, and the tooling around them. Also building production agentic systems: tool loops, MCP servers, streaming parsers, and agent memory.
+**AI/ML leader. Founder & CEO, [SAGE7 AI](https://sage7.ai).** I build agents you can trust to act — with money, data and memory — and the teams and platforms behind them.
 
-[Blog](https://shadowmodder.github.io) · [LinkedIn](https://linkedin.com/in/sudhirvissa)
+20+ years leading applied ML: Sr. Director of Data Science at SpotHero, ML platform at Apple, real-time services at Amazon Alexa, biometrics at Motorola/Lenovo. 48 granted patents, 22 papers. Current research: *The Autonomous Agentic Store* (SSRN) and lineage-aware agent memory (IEEE Access).
+
+The longer goal: be the person teams call on the hard AI/ML questions — technical *and* organizational. Which eval to trust, where an agent is allowed to act, what "good" looks like when the model is a moving target. The work below is the proof, not the pitch.
+
+**How I work:** agents draft, a human approves, a narrow actor executes, and the audit line is written before the action. Everything here is a working piece of that argument — the libraries my teams ship with, not demos.
+
+[sage7.ai/blog](https://sage7.ai/blog) · [LinkedIn](https://linkedin.com/in/sudhirvissa) · [Technical notes](https://shadowmodder.github.io) · sudhir.vissa@sage7.ai
+
+---
+
+### Right now
+
+- **Upstream contributions** — hands-on bug fixes in the LLM/ML libraries production systems actually run on: litellm, vLLM, lancedb, mem0, qdrant-client, weaviate-python-client. Twelve open PRs, two approved — the table below tracks merges as they land.
+- **memharness** — a neutral eval for agent memory, built because vendors grade their own homework. Verified run: 1,986 questions, mean F1 0.416, every question retrieved.
+- **Papers** — lineage-aware memory governance (IEEE Access) and the autonomous agentic store (SSRN). Selected papers below.
+- **Sage7 AI** — founder & CEO. Building the agent trust boundary: approval loops, audit lines, and memory governance for teams shipping agents in production.
 
 ---
 
@@ -13,28 +28,62 @@ Bug fixes shipped to production ML/LLM libraries. Open PRs tracked at [PORTFOLIO
 <!-- PR-STATUS-START -->
 | PR | Repository | Description | Merged |
 |---|---|---|---|
-| *(none merged yet — 3 open PRs in review)* | | | |
+| *(12 open PRs in review, 2 approved)* | | | |
 <!-- PR-STATUS-END -->
+
+---
+
+### Kernel & devices (Motorola era)
+
+Before the ML work, I shipped in the Android kernel trees at Motorola — Moto X 2015 (Clark, MSM8992) and Moto G (MSM8226) era.
+
+- Authored [arm/dt: 8992: Add gpio 112 to cnss node](https://github.com/CyanogenMod/android_kernel_motorola_msm8992/commit/d2976fcd7e97) (Jan 2015) — wired GPIO 112 to the connectivity subsystem node for Clark. The change still ships in the community kernel trees (LineageOS, CyanogenMod, MoKee, AICP and more).
+- Reviewed kernel changes in the same trees: roam-trigger support (MSM8226, 2013), reading the Wi-Fi MAC from UTAG (Clark, 2015), data-stall logging for the Clark driver (2015).
+- Full list of the upstream commits carrying my name: [GitHub commit search](https://github.com/search?q=%22Sudhir+Vissa%22&type=commits).
+
+---
+
+### Selected papers
+
+| Paper | Venue |
+|---|---|
+| [Lineage-Aware Memory Governance](https://arxiv.org/abs/2610.07258) | IEEE Access, Oct 2026 ([DOI](https://doi.org/10.1109/ACCESS.2026.3730363)) |
+| [The Autonomous Agentic Store](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6600538) | SSRN, Apr 2026 |
+| [After Attention](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7516238) | SSRN, Sep 2026 |
+| [IT-IFC](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6955238) | SSRN, Jun 2026 |
+
+---
+
+### Patents
+
+48 granted patents — mostly from the Motorola/Google era (biometrics, sensing, mobile devices), plus one from SpotHero (2024). Example: [Peer-to-peer group re-formation](https://patents.google.com/patent/US9560129B2/en) (US9560129B2, granted 2017). Full list on [Google Patents](https://patents.google.com/?inventor=Sudhir+Vissa).
 
 ---
 
 ### Writing
 
-Technical posts on production ML/LLM systems.
+Essays at [sage7.ai/blog](https://sage7.ai/blog); technical notes at [shadowmodder.github.io](https://shadowmodder.github.io).
 
 | Post | Tags |
 |---|---|
+| [My agents draft. I approve. Nothing acts without a tag.](https://sage7.ai/blog/agents-draft-i-approve) | agent trust boundary · approval loop · audit |
 | [Your Fraud Model's Scores Are Not Probabilities](https://shadowmodder.github.io/posts/calibration-in-production.html) | calibration · production ML · fraud |
 | [RAG Retrieval Isn't a Similarity Problem](https://shadowmodder.github.io/posts/rag-retrieval-isnt-similarity.html) | RAG · IR metrics · NDCG · MRR |
 | [Running an LLM Gateway in Production](https://shadowmodder.github.io/posts/llm-gateway-production.html) | LLM · rate limiting · cost · caching |
 | [Streaming LLMs in Production: The Edge Cases That Break Your App](https://shadowmodder.github.io/posts/streaming-llms-production.html) | streaming · SSE · LangChain · production |
 | [Fine-Tuning vs. Prompting: A Decision Framework That Doesn't Lie to You](https://shadowmodder.github.io/posts/finetuning-vs-prompting.html) | fine-tuning · LoRA · RAG · prompting |
+| [Claude Code Has No Memory. Here's How to Fix That.](https://shadowmodder.github.io/posts/claude-code-memory-persistence.html) | Claude Code · agent memory · persistence |
+| [CLAUDE.md: Everything You Can Put in Claude Code's Memory File](https://shadowmodder.github.io/posts/claude-md-guide.html) | Claude Code · CLAUDE.md · agent memory |
 
 Also on [LinkedIn](https://linkedin.com/in/sudhirvissa).
 
 ---
 
-### Agentic & LLM infrastructure
+### Open source
+
+Small, dependency-light libraries. Each one is the piece of an agentic or ML system where the decision actually gets made — the eval, the threshold, the memory, the tool loop.
+
+#### Agentic & LLM infrastructure
 
 | Repo | What it does |
 |------|--------------|
@@ -48,7 +97,7 @@ Also on [LinkedIn](https://linkedin.com/in/sudhirvissa).
 | [llm-gateway](https://github.com/shadowmodder/llm-gateway) | Production Anthropic API proxy: token-bucket rate limiting, retry with backoff, cost tracking |
 | [rag-demo](https://github.com/shadowmodder/rag-demo) | End-to-end RAG demo: BM25 + tool-loop agent + faithfulness eval + persistent memory |
 
-### ML evaluation & calibration
+#### ML evaluation & calibration
 
 | Repo | What it does |
 |------|--------------|
@@ -57,7 +106,7 @@ Also on [LinkedIn](https://linkedin.com/in/sudhirvissa).
 | [thresholdkit](https://github.com/shadowmodder/thresholdkit) | Pick operating thresholds under precision / FPR / cost / expected-value constraints |
 | [rankeval](https://github.com/shadowmodder/rankeval) | NDCG, MRR, AP@K, P@K, R@K — ranking metrics for search, recommendation, RAG |
 
-### Production ML & data
+#### Production ML & data
 
 | Repo | What it does |
 |------|--------------|
@@ -66,8 +115,9 @@ Also on [LinkedIn](https://linkedin.com/in/sudhirvissa).
 | [pii-redactor](https://github.com/shadowmodder/pii-redactor) | Detect & redact PII (email, phone, SSN, IP, Luhn-validated cards); custom patterns |
 | [capture-qa](https://github.com/shadowmodder/capture-qa) | Image capture-quality gates (sharpness, exposure, resolution) |
 | [modelcard-gen](https://github.com/shadowmodder/modelcard-gen) | Generate Model Card markdown from a JSON config |
+| [semantic_search](https://github.com/shadowmodder/semantic_search) | Semantic search over documents: SentenceTransformers embeddings, Flask API, Parquet store; Milvus experiment |
 
-### Systems & infrastructure
+#### Systems & infrastructure
 
 | Repo | What it does |
 |------|--------------|
@@ -78,4 +128,6 @@ Also on [LinkedIn](https://linkedin.com/in/sudhirvissa).
 
 ### Background
 
-20+ years across devices, cloud, and ML — biometrics & sensing at Motorola/Google/Lenovo, real-time services at Amazon Alexa scale, ML-platform work at SpotHero and Apple (feature pipelines, scoring infrastructure, model monitoring, data-science tooling). ~50 granted patents.
+Apple (ML platform, scoring infrastructure, model monitoring) · SpotHero (Sr. Director of Data Science; built the IQ pricing engine) · Amazon Alexa (on-device fingerprinting, real-time services at Alexa scale) · Motorola / Google / Lenovo (Moto Access biometric platform, ~10 years). Georgetown, Texas.
+
+Working on agent trust boundaries, agent memory governance or FDE-style AI adoption in your org? [Compare notes](https://sage7.ai/contact).
