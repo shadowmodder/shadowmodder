@@ -30,7 +30,7 @@ Before this: 20 years leading engineering and data-science organizations — Sr.
 
 ---
 
-<p align="center"><a href="https://sage7.ai/blog/agents-draft-i-approve"><img src="https://sage7.ai/blog/approval-loop.png" width="760" alt="How one person runs SAGE7 at team scale: agents draft, one human approves, a narrow actor executes, audit first."></a></p>
+<p align="center"><a href="https://sage7.ai/blog/agents-draft-i-approve"><img src="https://sage7.ai/blog/one-person-org.png" width="640" alt="How one person runs SAGE7: one accountable human, a manager agent over the drafting agents, engineering agents shipping through gates to production. Agents draft; nothing acts without an approval tag."></a></p>
 
 ### Leadership record
 
