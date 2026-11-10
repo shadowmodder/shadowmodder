@@ -2,7 +2,7 @@
 
 **AI/ML leader. Founder & CEO, [SAGE7 AI](https://sage7.ai).** I build agents you can trust to act — with money, data and memory — and the teams and platforms behind them.
 
-20+ years leading engineering and data-science organizations: Sr. Director at SpotHero (2 teams → 7, 15 → 65 people, two countries), Sr. Director of Applied ML & Data Platforms at Apple (17 engineers), Tier-1 speech services at Amazon Alexa (~1B devices, tens of thousands of requests/sec), a decade of devices and connectivity at Motorola/Google/Lenovo. 42 granted U.S. patents (57+ filings), 604 citations.
+20+ years leading engineering and data-science organizations: Sr. Director at SpotHero (2 teams → 7, 15 → 65 people, two countries), Sr. Director of Applied ML & Data Platforms at Apple (17 engineers), Tier-1 speech services at Amazon Alexa (~1B devices, tens of thousands of requests/sec), a decade of devices and connectivity at Motorola/Google/Lenovo. 48 granted patents, 604 citations.
 
 The longer goal: build, brick by brick, a high-value company that actually helps people and companies with real AI problems — which eval to trust, where an agent is allowed to act, what "good" looks like when the model is a moving target. The work below is the proof, not the pitch.
 
@@ -25,6 +25,17 @@ What changed because I was in the room — the decision, then the result.
 | **Motorola → Google → Lenovo** · Engineering Manager | From kernel Wi-Fi drivers and board bring-up to running 12-engineer connectivity and R&D teams (sensors, indoor positioning, biometrics) with silicon vendors and ODMs across Asia. | A patented cloud-decision geolocation feature shipped in Android M; the group's IP portfolio and ~40 upstream Linux-kernel contributions. |
 
 Also: Head of Engineering at Next Step Dynamics (Sweden) — distributed full-stack, data and ML teams on a GDPR-regulated multi-tenant care platform with edge ML on wearable sensor streams.
+
+**From people who worked with me** ([all recommendations](https://www.linkedin.com/in/sudhirvissa/details/recommendations/))
+
+> "A strong leader that any engineering organization could benefit from … thoughtful in how he grew his engineers."
+> — Ashwin Sawh, fellow Director at SpotHero
+
+> "His technical expertise is outstanding, and as a mentor, his guidance is invaluable."
+> — Luis M. Antunes, Staff Data Scientist, SpotHero
+
+> "We counted on him as a technical leader for our development team."
+> — Roland Labana, CTO Altafid; ex Snap, Google, Motorola
 
 ---
 
@@ -56,7 +67,7 @@ Earlier articles: *Optimizing Large-Scale MLOps Pipelines for Continuous ML Depl
 
 ### IP/Patent portfolio
 
-42 granted U.S. patents, 604 citations. What matters is how often later inventors build on them — the most-cited, by 88. The work spans biometrics, sensing, location, and audio — plus cloud and AI.
+48 granted patents, 604 citations. What matters is how often later inventors build on them — the most-cited, by 88. The work spans biometrics, sensing, location, and audio — plus cloud and AI.
 
 | Patent | Cited by |
 |---|---|
