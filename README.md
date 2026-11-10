@@ -25,6 +25,12 @@ Before this: 20 years leading engineering and data-science organizations — Sr.
 
 **Customers.** Austin IBN, Intellect Capital Group, AlgebraIT and Upsimpl, plus engagements under NDA in energy (power generation and storage), IT services and staffing, and talent management — FDE-style training, agent-architecture patterns and production delivery. Working on agents that touch money, data or memory? [Reach out](https://sage7.ai/contact).
 
+<p align="center">
+  <a href="https://austinibn.com"><img src="https://austinibn.com/wp-content/uploads/2025/02/Logo1.png" height="44" alt="Austin IBN"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://algebrait.com"><img src="https://algebrait.com/wp-content/uploads/2025/01/AlgebraIT_Logo_1.png" height="36" alt="AlgebraIT"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://upsimpl.com"><img src="https://framerusercontent.com/images/sTWc3y2ttmyCKFgouahqoYNVRE.png" height="26" alt="Upsimpl"></a>
+</p>
+
 [sage7.ai/blog](https://sage7.ai/blog) · [LinkedIn](https://linkedin.com/in/sudhirvissa) · [Technical notes](https://shadowmodder.github.io) · sudhir.vissa@sage7.ai
 
 ---
