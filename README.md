@@ -23,7 +23,7 @@ Before this: 20 years leading engineering and data-science organizations — Sr.
 
 **Repo to production in under 15 minutes.** One standing platform — own Kubernetes cluster, GitOps (ArgoCD), CI that builds and pins images, a namespace and database per product, observability — so a new product goes from first commit to a live URL in under 15 minutes, on infrastructure sized for ~100k customer interactions a day. Agents can only ship through the same gates: performant, scalable, reviewed.
 
-**Customers.** Austin IBN, Intellect Capital Group, AlgebraIT and Upsimpl, plus engagements under NDA in energy (power generation and storage), IT services and staffing, and talent management — FDE-style training, agent-architecture patterns and production delivery. Working on agents that touch money, data or memory? [Reach out](https://sage7.ai/contact).
+**Customers.** GreenBridge AI (agentic platform for power generation and storage), Austin IBN, Intellect Capital Group, AlgebraIT and Upsimpl, plus engagements under NDA in IT services and staffing, and talent management — FDE-style training, agent-architecture patterns and production delivery. Working on agents that touch money, data or memory? [Reach out](https://sage7.ai/contact).
 
 
 [sage7.ai/blog](https://sage7.ai/blog) · [LinkedIn](https://linkedin.com/in/sudhirvissa) · [Technical notes](https://shadowmodder.github.io) · sudhir.vissa@sage7.ai
