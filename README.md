@@ -1,18 +1,20 @@
 # Sudhir Vissa
 
-**AI/ML leader. Founder & CEO, [SAGE7 AI](https://sage7.ai).** I build agents you can trust to act — with money, data and memory — and the teams and platforms behind them.
+**Founder & CEO, [SAGE7 AI](https://sage7.ai) — a one-person AI company, run like a 65-person org.**
 
-20+ years leading engineering and data-science organizations: Sr. Director at SpotHero (2 teams → 7, 15 → 65 people, two countries), Sr. Director of Applied ML & Data Platforms at Apple (17 engineers), Tier-1 speech services at Amazon Alexa (~1B devices, tens of thousands of requests/sec), a decade of devices and connectivity at Motorola/Google/Lenovo. 48 granted patents, 604 citations.
+In the last twelve months, one person shipped: four papers (IEEE Access, SSRN), 25 open-source libraries, 13 upstream fixes to vLLM, litellm, mem0 and others, 5,500+ GitHub contributions, a production platform on my own Kubernetes cluster, and agent deployments inside an enterprise finance team. No team. Agents draft everything; I own every decision that touches money, data or a customer, and the audit line is written before anything acts.
 
-The longer goal: build, brick by brick, a high-value company that actually helps people and companies with real AI problems — which eval to trust, where an agent is allowed to act, what "good" looks like when the model is a moving target. The work below is the proof, not the pitch.
+That is also the product. SAGE7 builds the trust boundary that lets one accountable person run a fleet of agents — and lets a bank or an insurer do the same at their scale. This page is the working prototype.
 
-**Operating principle:** agents draft, a human approves, a narrow actor executes, and the audit line is written before the action. I run teams the same way — the guardrail is the design, not the heroics.
+Before this: 20 years leading engineering and data-science organizations — Sr. Director at SpotHero (2 teams → 7, 15 → 65 people, two countries), Sr. Director of Applied ML & Data Platforms at Apple (17 engineers), Tier-1 speech services at Amazon Alexa (~1B devices), a decade of devices and connectivity at Motorola/Google/Lenovo. 48 granted patents, 604 citations.
+
+**Operating principle:** the guardrail is the design, not the heroics. Everything below — the leadership record, the papers, the libraries — is the same idea at different scales.
 
 [sage7.ai/blog](https://sage7.ai/blog) · [LinkedIn](https://linkedin.com/in/sudhirvissa) · [Technical notes](https://shadowmodder.github.io) · sudhir.vissa@sage7.ai
 
 ---
 
-<p align="center"><a href="https://sage7.ai/blog/agents-draft-i-approve"><img src="https://sage7.ai/blog/approval-loop.png" width="760" alt="Agents draft. A human approves. The approval-gated loop SAGE7 runs its own operations on."></a></p>
+<p align="center"><a href="https://sage7.ai/blog/agents-draft-i-approve"><img src="https://sage7.ai/blog/approval-loop.png" width="760" alt="How one person runs SAGE7 at team scale: agents draft, one human approves, a narrow actor executes, audit first."></a></p>
 
 ### Leadership record
 
