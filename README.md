@@ -6,7 +6,7 @@ Sr. Director of Data Science at SpotHero (built the IQ pricing engine; grew the 
 
 The longer goal: build, brick by brick, a high-value company that actually helps people and companies with real AI problems — which eval to trust, where an agent is allowed to act, what "good" looks like when the model is a moving target. The work below is the proof, not the pitch.
 
-**How I work:** I run teams the way I run production systems — guardrails that hold under pressure, standards that don't slip when the deadline moves, execution that lands accurately without breaking what's working or getting blocked. The libraries below are the proof, not demos: the eval, the threshold, the memory, the tool loop — where the decision actually gets made.
+**Operating principle:** agents draft, a human approves, a narrow actor executes, and the audit line is written before the action. I run teams the same way — the guardrail is the design, not the heroics.
 
 [sage7.ai/blog](https://sage7.ai/blog) · [LinkedIn](https://linkedin.com/in/sudhirvissa) · [Technical notes](https://shadowmodder.github.io) · sudhir.vissa@sage7.ai
 
@@ -19,15 +19,12 @@ The longer goal: build, brick by brick, a high-value company that actually helps
 | memharness | Neutral eval for agent memory — vendors grade their own homework. Verified run: 1,986 questions, every one retrieved |
 | Whitepapers | Lineage-aware memory governance (IEEE Access), the autonomous agentic store (SSRN) — full list below |
 | Sage7 AI | Agent trust boundary for teams shipping agents in production — Oracle Fusion AR: 70% of receivables automated, refunds under 24h, errors 12% to under 1%; shipped eHire (autonomous sales workflow) |
-| DocuSpark | Production RAG app — [docuspark.ai](https://docuspark.ai), featured on Product Hunt |
-| PicNPlay | [picnplay.com](https://picnplay.com) — go-to-market underway, v1.0.4 in App Store review |
-| forgein | Claude productivity toolkit — [forgein.ai](https://forgein.ai), Pro $4.99/mo ([app.forgein.ai](https://app.forgein.ai)) |
-| Also shipped | [basics.ai](https://basics.ai), [irohealth.com](https://irohealth.com), [kidkruz.com](https://kidkruz.com), Verra (HR-compliance platform) |
+| Also shipped | [DocuSpark](https://docuspark.ai) (production RAG, Product Hunt), [PicNPlay](https://picnplay.com) (App Store), [forgein](https://forgein.ai) (Claude productivity toolkit), [basics.ai](https://basics.ai), [irohealth.com](https://irohealth.com), [kidkruz.com](https://kidkruz.com), Verra (HR compliance) |
 | Open-source contributions | 12 open PRs, 2 approved — hands-on fixes to the LLM/ML libraries production runs on: litellm, vLLM, lancedb, mem0, qdrant-client, weaviate-python-client (full record at the bottom) |
 
 ---
 
-### Whitepapers
+### Papers
 
 | Paper | Venue |
 |---|---|
@@ -35,8 +32,8 @@ The longer goal: build, brick by brick, a high-value company that actually helps
 | [The Autonomous Agentic Store: Architecture, Safety Requirements, and a Constitutional AI Deployment Framework for Fully Staffless Physical Retail](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6600538) | SSRN, Apr 2026 |
 | [After Attention: The Economics of Markets Where the Buyer Is an Agent](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7516238) | SSRN, Sep 2026 |
 | [IT-IFC: Ingestion-Centric Information Flow Control for Preventing PII/PCI Leakage in AI-Augmented BI](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6955238) | SSRN, Jun 2026 |
-| Optimizing Large-Scale MLOps Pipelines for Continuous ML Deployment | Hampton Global Business Review, 2025 |
-| The Evolution of Cloud-Native Data Pipelines | Global Business & Economics Journal |
+
+Earlier articles: *Optimizing Large-Scale MLOps Pipelines for Continuous ML Deployment* (2025), *The Evolution of Cloud-Native Data Pipelines*.
 
 ---
 
@@ -78,7 +75,7 @@ Essays at [sage7.ai/blog](https://sage7.ai/blog); technical notes at [shadowmodd
 
 ### Open source
 
-Small, dependency-light libraries — the pieces where the decision actually gets made: the eval, the threshold, the memory, the tool loop.
+Small, dependency-light libraries my teams ship with — the pieces where the decision actually gets made: the eval, the threshold, the memory, the tool loop.
 
 #### Agentic & LLM infrastructure
 
@@ -127,7 +124,7 @@ Small, dependency-light libraries — the pieces where the decision actually get
 
 Apple (AI/ML leader; ML platform, scoring, model monitoring) · SpotHero (Sr. Director of Data Science; IQ pricing engine; 2 → 6 teams) · Amazon Alexa (wake-word, ASR, TTS to a ~1B-device fleet) · Motorola / Google / Lenovo (Moto Access biometrics, ~10 years). Georgetown, Texas.
 
-Education: M.S. Electrical Engineering (Computer Networking), New Jersey Institute of Technology (3.8/4.0); B.Tech, Electronics & Communication, MCET Hyderabad (3.6/4.0).
+M.S. Electrical Engineering, New Jersey Institute of Technology · B.Tech Electronics & Communication, MCET Hyderabad.
 
 Working on agent trust boundaries, agent memory governance or FDE-style AI adoption in your org? [Compare notes](https://sage7.ai/contact).
 
