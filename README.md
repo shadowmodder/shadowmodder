@@ -27,7 +27,6 @@ Before this: 20 years leading engineering and data-science organizations — Sr.
 
 <p align="center">
   <a href="https://austinibn.com"><img src="https://austinibn.com/wp-content/uploads/2025/02/Logo1.png" height="44" alt="Austin IBN"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://algebrait.com"><img src="https://algebrait.com/wp-content/uploads/2025/01/AlgebraIT_Logo_1.png" height="36" alt="AlgebraIT"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://upsimpl.com"><img src="https://sage7.ai/customers/upsimpl.png" height="30" alt="Upsimpl"></a>
 </p>
 
