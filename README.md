@@ -10,6 +10,21 @@ Before this: 20 years leading engineering and data-science organizations — Sr.
 
 **Operating principle:** the guardrail is the design, not the heroics. Everything below — the leadership record, the papers, the libraries — is the same idea at different scales.
 
+### How one person runs it
+
+**An org chart, not a chatbot.** SAGE7 is staffed like a 65-person company. Every agent has a charter, a scope and the statuses it is allowed to move work into. A manager agent runs the drafting functions; I run the agents that touch production, customers or money myself. Nothing acts without an approval tag, and the audit line is written before the action.
+
+| Function | Who runs it | Gate |
+|---|---|---|
+| Content, research, visibility | Manager agent → drafting agents | I approve every post; every number traces to a source |
+| Outreach and pipeline | Manager agent → outreach agents | I approve every send; nothing goes out from a draft |
+| Engineering: code, tests, infra | Agents reporting to me directly | Performance, scalability and architecture gates before merge |
+| Customers, production, money | Me | No delegation |
+
+**Repo to production in under 15 minutes.** One standing platform — own Kubernetes cluster, GitOps (ArgoCD), CI that builds and pins images, a namespace and database per product, observability — so a new product goes from first commit to a live URL in under 15 minutes, on infrastructure sized for ~100k customer interactions a day. Agents can only ship through the same gates: performant, scalable, reviewed.
+
+**Customers.** Engagements across energy (power generation and storage), IT services and staffing, talent management, indoor advertising, consumer apps, real estate and product design — FDE-style training, agent-architecture patterns and production delivery. Names and references on request.
+
 [sage7.ai/blog](https://sage7.ai/blog) · [LinkedIn](https://linkedin.com/in/sudhirvissa) · [Technical notes](https://shadowmodder.github.io) · sudhir.vissa@sage7.ai
 
 ---
