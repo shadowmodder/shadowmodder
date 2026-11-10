@@ -88,11 +88,7 @@ Full list on [Google Patents](https://patents.google.com/?inventor=Sudhir+Vissa)
 Essays at [sage7.ai/blog](https://sage7.ai/blog); technical notes at [shadowmodder.github.io](https://shadowmodder.github.io); earlier writing on [Medium](https://medium.com/@sid.vissa).
 
 | Post |
-|
-
-</details>
-
----|
+|---|
 | [My agents draft. I approve. Nothing acts without a tag.](https://sage7.ai/blog/agents-draft-i-approve) |
 | [Your Fraud Model's Scores Are Not Probabilities](https://shadowmodder.github.io/posts/calibration-in-production.html) |
 | [RAG Retrieval Isn't a Similarity Problem](https://shadowmodder.github.io/posts/rag-retrieval-isnt-similarity.html) |
@@ -106,6 +102,9 @@ Essays at [sage7.ai/blog](https://sage7.ai/blog); technical notes at [shadowmodd
 | [Making Informed Hiring Decisions for Software Development](https://medium.com/@sid.vissa/making-informed-hiring-decisions-for-software-development-4c1f59fbfbe7) |
 | [Navigating the Data Engineering Space](https://medium.com/@sid.vissa/navigating-the-data-engineering-space-59c7a991340a) |
 
+</details>
+
+
 ---
 
 <details>
@@ -116,11 +115,7 @@ Small, dependency-light libraries my teams ship with — the pieces where the de
 #### Agentic & LLM infrastructure
 
 | Repo | What it does |
-|
-
-</details>
-
-------|--------------|
+|------|--------------|
 | [tool-loop](https://github.com/shadowmodder/tool-loop) | Agentic tool-use loop: parallel dispatch, error isolation, auto-schema |
 | [mcp-quickserver](https://github.com/shadowmodder/mcp-quickserver) | MCP server template: tools, resources, prompts; stdio + SSE |
 | [stream-parse](https://github.com/shadowmodder/stream-parse) | Streaming LLM output parser: incremental JSON, tool-call deltas, SSE |
@@ -157,6 +152,9 @@ Small, dependency-light libraries my teams ship with — the pieces where the de
 |------|--------------|
 | [tps-bench](https://github.com/shadowmodder/tps-bench) | HTTP throughput & p50/p90/p99 latency benchmark |
 | [cmsketch](https://github.com/shadowmodder/cmsketch) | Count-Min Sketch: sublinear-memory counters |
+
+</details>
+
 
 ---
 
