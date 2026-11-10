@@ -2,7 +2,7 @@
 
 **AI/ML leader. Founder & CEO, [SAGE7 AI](https://sage7.ai).** I build agents you can trust to act — with money, data and memory — and the teams and platforms behind them.
 
-Sr. Director of Data Science at SpotHero (built the IQ pricing engine; grew the org from 2 teams to 6), AI/ML leader at Apple, real-time services at Amazon Alexa (wake-word, ASR, TTS to a ~1B-device fleet), biometrics at Motorola/Lenovo. 42 granted U.S. patents, 604 citations.
+20+ years leading engineering and data-science organizations: Sr. Director at SpotHero (2 teams → 7, 15 → 65 people, two countries), Sr. Director of Applied ML & Data Platforms at Apple (17 engineers), Tier-1 speech services at Amazon Alexa (~1B devices, tens of thousands of requests/sec), a decade of devices and connectivity at Motorola/Google/Lenovo. 42 granted U.S. patents (57+ filings), 604 citations.
 
 The longer goal: build, brick by brick, a high-value company that actually helps people and companies with real AI problems — which eval to trust, where an agent is allowed to act, what "good" looks like when the model is a moving target. The work below is the proof, not the pitch.
 
@@ -12,19 +12,36 @@ The longer goal: build, brick by brick, a high-value company that actually helps
 
 ---
 
+### Leadership record
+
+What changed because I was in the room — the decision, then the result.
+
+| Where | Situation → decision | Result |
+|---|---|---|
+| **SpotHero** · Sr. Director, Data Science / Insights & Forecasting | Pricing was rule-based and the data org was 15 people in 2 teams. Split ML engineering from data science, stood up a platform team, built the forecasting and experimentation practice, and architected **SpotHero IQ** (precision pricing) plus time-based reservation reselling. | ~6× revenue on the priced inventory by deployment, with measured ROI. Org grew to 7 teams / 65 people across the US and Canada with predictable delivery; KPIs and forecasts set executive pricing and spend decisions. |
+| **Apple** · Sr. Director, Applied ML & Data Platforms | Model builders across the org each shipped their own way. Led 17 engineers on two teams to make the governed path the default — versioning, lineage, monitoring and rollback as platform primitives, plus a technical-debt framework. | Shorter model-deployment timelines and higher reliability across dozens of use cases. The same lineage-first idea is now the thesis of my IEEE Access paper. |
+| **Amazon Alexa** · Sr. SDM, Alexa Services | Tier-1 services delivering ASR, TTS, speech-to-intent and wake-word models to the whole fleet needed to scale and stay certified. Re-architected on DynamoDB + S3; embedded threat modeling into daily delivery. | ~1B devices served at tens of thousands of TPS with cost-based dynamic scaling; security certification retained through the rebuild. |
+| **Uptake** · Director of Engineering, Platform Data Sciences | Enterprise IIoT customers on Tier-1 model-management and DBaaS services with no operating discipline. Managed EMs, TPMs, principals, data scientists and SREs; instituted SLAs/SLOs and monthly cost/reliability reviews. | Operational-excellence controls (rate limiting, load testing, scaling) became routine; an invention-sprint program produced the lab's patent and white-paper portfolio. |
+| **Motorola → Google → Lenovo** · Engineering Manager | From kernel Wi-Fi drivers and board bring-up to running 12-engineer connectivity and R&D teams (sensors, indoor positioning, biometrics) with silicon vendors and ODMs across Asia. | A patented cloud-decision geolocation feature shipped in Android M; the group's IP portfolio and ~40 upstream Linux-kernel contributions. |
+
+Also: Head of Engineering at Next Step Dynamics (Sweden) — distributed full-stack, data and ML teams on a GDPR-regulated multi-tenant care platform with edge ML on wearable sensor streams.
+
+---
+
 ### Right now
 
 | Focus | Now |
 |---|---|
-| memharness | Neutral eval for agent memory — vendors grade their own homework. Verified run: 1,986 questions, every one retrieved |
-| Whitepapers | Lineage-aware memory governance (IEEE Access), the autonomous agentic store (SSRN) — full list below |
-| Sage7 AI | Agent trust boundary for teams shipping agents in production — Oracle Fusion AR: 70% of receivables automated, refunds under 24h, errors 12% to under 1%; shipped eHire (autonomous sales workflow) |
-| Also shipped | [DocuSpark](https://docuspark.ai) (production RAG, Product Hunt), [PicNPlay](https://picnplay.com) (App Store), [forgein](https://forgein.ai) (Claude productivity toolkit), [basics.ai](https://basics.ai), [irohealth.com](https://irohealth.com), [kidkruz.com](https://kidkruz.com), Verra (HR compliance) |
+| memharness | Neutral eval harness for agent memory — vendors shouldn't grade their own homework. Latest verified run: 1,986 questions across the suite |
+| Papers | Lineage-aware memory governance (IEEE Access), the autonomous agentic store (SSRN) — full list below |
+| SAGE7 AI | Agent trust boundary for teams shipping agents in production. Recent client work (enterprise finance team, 2026): Oracle Fusion AR automation — ~70% of the receivables workload automated, refunds from 3–5 days to under 24h, error rate 12% → under 1%. Shipped eHire (autonomous outbound-sales workflow). |
 | Open-source contributions | 12 open PRs, 2 approved — hands-on fixes to the LLM/ML libraries production runs on: litellm, vLLM, lancedb, mem0, qdrant-client, weaviate-python-client (full record at the bottom) |
 
 ---
 
 ### Papers
+
+One argument, four papers: when an agent acts on money, data or memory, the trust boundary is an architecture decision, not a prompt. *Agentic Store* sets the safety requirements for agents that transact; *Lineage-Aware Memory* says an agent may act on a memory only if its provenance is checked first; *After Attention* works out the market economics when the buyer is an agent; *IT-IFC* keeps PII/PCI from leaking into AI-augmented analytics at ingestion.
 
 | Paper | Venue |
 |---|---|
@@ -122,7 +139,7 @@ Small, dependency-light libraries my teams ship with — the pieces where the de
 
 ### Background
 
-Apple (AI/ML leader; ML platform, scoring, model monitoring) · SpotHero (Sr. Director of Data Science; IQ pricing engine; 2 → 6 teams) · Amazon Alexa (wake-word, ASR, TTS to a ~1B-device fleet) · Motorola / Google / Lenovo (Moto Access biometrics, ~10 years). Georgetown, Texas.
+SAGE7 AI (2024– ) · Apple · SpotHero · Next Step Dynamics · Uptake · Amazon Alexa · Motorola / Google / Lenovo (2007–2017). Georgetown, Texas.
 
 M.S. Electrical Engineering, New Jersey Institute of Technology · B.Tech Electronics & Communication, MCET Hyderabad.
 
@@ -130,7 +147,7 @@ Working on agent trust boundaries, agent memory governance or FDE-style AI adopt
 
 ### Upstream work
 
-Correctness and security fixes in the ML/LLM libraries production runs on — plus the kernel work underneath. One record, open PRs through kernel patches. Also tracked at [PORTFOLIO.md](https://github.com/shadowmodder/shadowmodder.github.io/blob/master/PORTFOLIO.md).
+Correctness and security fixes in the ML/LLM libraries production runs on, plus the kernel work underneath. Also tracked at [PORTFOLIO.md](https://github.com/shadowmodder/shadowmodder.github.io/blob/master/PORTFOLIO.md).
 
 | Contribution | Repository | Date | Status |
 |---|---|---|---|
@@ -148,20 +165,6 @@ Correctness and security fixes in the ML/LLM libraries production runs on — pl
 | [feat(metrics): add ECE and RMS calibration error metrics](https://github.com/EleutherAI/lm-evaluation-harness/pull/3913) | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | 2026-07-05 | Open |
 | [fix(providers): retry empty completion choices across handlers](https://github.com/567-labs/instructor/commit/8da7a13f1babc7c8c6c2896b3734f1f1ae5e65b2) — co-authored, landed via maintainer's #2902 | [567-labs/instructor](https://github.com/567-labs/instructor) | 2026-11-05 | Merged |
 | [Add Dockerfile](https://github.com/staart/ui/commit/95e2d6dba73aabb0f37f3a236791726cb726b96a) — merged as PR #1131 | [staart/ui](https://github.com/staart/ui) | 2021-05-09 | Merged |
-| [WIFi LFR roaming events from QC](https://github.com/MoKee/android_kernel_motorola_ghost/commit/42905835902165f44bb171524234003cafa8d213) | Ghost | 2013-04-25 | Authored · 33 trees |
-| [DTIM 5 Beacon interval](https://github.com/emceethemouth/kernel_ghost/commit/4801399f3c2ecae77d3bdd5f66214fad1e8e9f98) | Ghost | 2013-10-15 | Authored · 12 trees |
-| [SBA from QC for SAP Country code](https://github.com/emceethemouth/kernel_ghost/commit/332b038371e8a646759c9df2f888cd4803178f6e) | Ghost | 2013-10-23 | Authored · 12 trees |
-| [PNO Sched_scan fix from SR 01332508](https://github.com/DC07/spirit_ghost/commit/ea14913146cd116b55bb56b247ec3e4459b99aa6) | Ghost | 2013-10-23 | Authored · 13 trees |
-| [shamu_defconfig: Add BCMDHD configuration](https://github.com/CPA-Poke/android_kernel_moto_shamu/commit/d90bb83164d0ed088430b60c9d020595132e5f7c) | Shamu | 2014-05-22 | Authored · 237 trees |
-| [arm: msm: bcm: remove msm_pcie_status_notify](https://github.com/SaberMod/android_kernel_moto_shamu/commit/3cc91bc41a65f01c5daaaadc32e37e4460513429) | Shamu | 2014-06-03 | Authored · 237 trees |
-| [8994-bringup-hack: net: cnss: Reset](https://github.com/CyanogenMod/android_kernel_motorola_msm8992/commit/73349158029916d2093a30436bfd817c79ce516c) | MSM8992 | 2014-10-23 | Authored · 64 trees |
-| [8994-bringup-hack arm/dt: 8994: Add gpio 112 to cnss node](https://github.com/CyanogenMod/android_kernel_motorola_msm8992/commit/dcb3858728a2f67b6e9b33cee9fbc7a4657bcb8b) | MSM8992 | 2014-10-23 | Authored · 64 trees |
-| [arm/dt: 8992: Add gpio 112 to cnss node](https://github.com/CyanogenMod/android_kernel_motorola_msm8992/commit/d2976fcd7e97) | MSM8992 | 2015-01-08 | Authored · 32 trees |
-| [additional logging for Clark driver on data stall](https://github.com/HashBang173/qcacld-2.0/commit/12d92b29542b2b20a15cb08c4f9982d67610c2a7) | qcacld-2.0 | 2015-04-27 | Authored · 1 tree |
-| [enable packetlogs from ini for data stall](https://github.com/HashBang173/qcacld-2.0/commit/83a479aaca22c8fb00ce57243b7a6acdb14c68e3) | qcacld-2.0 | 2015-04-28 | Authored · 1 tree |
-| [Add set Roam trigger support](https://github.com/TeamMoskvich/android_kernel_motorola_msm8226/commit/0222a70c39c7933176e4b52fe20fea14bc5e24eb) | MSM8226 | 2013-09-11 | Reviewed-by · 61 trees |
-| [Reading of MAC from UTAG (Clark)](https://github.com/LineageOS/android_kernel_motorola_msm8992/commit/d748b77e92) | MSM8992 | 2015-02-13 | Reviewed-by · 35 trees |
-
-Kernel work: Android trees at Motorola — Ghost (Moto X 2013), Clark/MSM8992 (Moto X 2015), MSM8226 (Moto G), Shamu (Nexus 6). Authored as `shadowmodder` (`sid@motorola.com`), also as `Sudhir C Vissa` and `fjdw67`. Status counts the community trees still carrying each change.
+Kernel work (2013–2015): ~40 Wi-Fi and connectivity patches in Motorola's Android trees — Ghost (Moto X 2013), Clark/MSM8992 (Moto X 2015), MSM8226 (Moto G), Shamu (Nexus 6) — still carried in up to 237 community trees. Authored as `shadowmodder`, `Sudhir C Vissa` and `fjdw67`.
 
 Full list of the upstream commits carrying my name: [GitHub commit search](https://github.com/search?q=%22Sudhir+Vissa%22&type=commits).
