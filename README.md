@@ -18,7 +18,7 @@ Before this: 20 years leading engineering and data-science organizations — Sr.
 |---|---|---|
 | Content, research, visibility | Manager agent → drafting agents | I approve every post; every number traces to a source |
 | Outreach and pipeline | Manager agent → outreach agents | I approve every send; nothing goes out from a draft |
-| Engineering: code, tests, infra | Agents reporting to me directly | Performance, scalability and architecture gates before merge |
+| Engineering: code, tests, infra | Agents reporting to me directly — e.g. a nightly PR agent across a portfolio company's 7 repos that scans, fixes and verifies | Performance, scalability and architecture gates before merge; the PR agent is not allowed to merge |
 | Customers, production, money | Me | No delegation |
 
 **Repo to production in under 15 minutes.** One standing platform — own Kubernetes cluster, GitOps (ArgoCD), CI that builds and pins images, a namespace and database per product, observability — so a new product goes from first commit to a live URL in under 15 minutes, on infrastructure sized for ~100k customer interactions a day. Agents can only ship through the same gates: performant, scalable, reviewed.
