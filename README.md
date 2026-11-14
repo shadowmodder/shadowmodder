@@ -66,7 +66,7 @@ Also: Head of Engineering at Next Step Dynamics (Sweden) — distributed full-st
 | memharness | Neutral eval harness for agent memory — vendors shouldn't grade their own homework. Latest verified run: 1,986 questions across the suite |
 | Papers | Lineage-aware memory governance (IEEE Access), the autonomous agentic store (SSRN) — full list below |
 | SAGE7 AI | Agent trust boundary for teams shipping agents in production. Recent client work (enterprise finance team, 2026): Oracle Fusion AR automation — ~70% of the receivables workload automated, refunds from 3–5 days to under 24h, error rate 12% → under 1%. Shipped eHire (autonomous outbound-sales workflow). |
-| Open-source contributions | 13 open PRs, 3 approved — hands-on fixes to the LLM/ML libraries production runs on: litellm, vLLM, lancedb, mem0, qdrant-client, weaviate-python-client (full record at the bottom) |
+| Open-source contributions | 12 open PRs, 1 approved, 2 merged — hands-on fixes to the LLM/ML libraries production runs on: litellm, vLLM, lancedb, mem0, qdrant-client, weaviate-python-client (full record at the bottom) |
 
 ---
 
@@ -177,7 +177,7 @@ Small, dependency-light libraries my teams ship with — the pieces where the de
 ---
 
 <details>
-<summary><b>Upstream work — 13 PRs to litellm, vLLM, lancedb, mem0 and others, plus 2013–15 Linux-kernel patches</b></summary>
+<summary><b>Upstream work — 12 open PRs and 2 merged fixes, to litellm, vLLM, lancedb, mem0 and others, plus 2013–15 Linux-kernel patches</b></summary>
 
 Correctness and security fixes in the ML/LLM libraries production runs on, plus the kernel work underneath. Also tracked at [PORTFOLIO.md](https://github.com/shadowmodder/shadowmodder.github.io/blob/master/PORTFOLIO.md).
 
@@ -185,8 +185,8 @@ Correctness and security fixes in the ML/LLM libraries production runs on, plus 
 |---|---|---|---|
 | [fix(proxy): fail startup when a custom guardrail names an instance](https://github.com/BerriAI/litellm/pull/50848) | [BerriAI/litellm](https://github.com/BerriAI/litellm) | 2026-11-10 | Open |
 | [fix(python): fetch minimum rank-fusion window per side in hybrid search](https://github.com/lancedb/lancedb/pull/4772) | [lancedb/lancedb](https://github.com/lancedb/lancedb) | 2026-10-30 | Open — approved |
-| [fix(users): report Go zero time created_at as None for db users](https://github.com/weaviate/weaviate-python-client/pull/2244) | [weaviate/weaviate-python-client](https://github.com/weaviate/weaviate-python-client) | 2026-11-08 | Open — approved |
-| [[Bugfix][Multimodal] Domain-separate content digests and caller uuids in mm hashes](https://github.com/vllm-project/vllm/pull/66473) | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 2026-11-08 | Open — approved |
+| [fix(users): report Go zero time created_at as None for db users](https://github.com/weaviate/weaviate-python-client/pull/2244) | [weaviate/weaviate-python-client](https://github.com/weaviate/weaviate-python-client) | 2026-11-08 | Merged |
+| [[Bugfix][Multimodal] Domain-separate content digests and caller uuids in mm hashes](https://github.com/vllm-project/vllm/pull/66473) | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 2026-11-08 | Merged |
 | [[Frontend][Responses] Reject empty assistant message content with 400 instead of 500](https://github.com/vllm-project/vllm/pull/66475) | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 2026-11-08 | Open |
 | [fix(responses): keep overlong system prompts in input on the chat to responses bridge](https://github.com/BerriAI/litellm/pull/50328) | [BerriAI/litellm](https://github.com/BerriAI/litellm) | 2026-11-05 | Open |
 | [fix(proxy): redact guardrail-blocked request body from spend logs](https://github.com/BerriAI/litellm/pull/50214) | [BerriAI/litellm](https://github.com/BerriAI/litellm) | 2026-11-05 | Open |
