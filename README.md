@@ -66,7 +66,7 @@ Also: Head of Engineering at Next Step Dynamics (Sweden) — distributed full-st
 | memharness | Neutral eval harness for agent memory — vendors shouldn't grade their own homework. Latest verified run: 1,986 questions across the suite |
 | Papers | Lineage-aware memory governance (IEEE Access), the autonomous agentic store (SSRN) — full list below |
 | SAGE7 AI | Agent trust boundary for teams shipping agents in production. Recent client work (enterprise finance team, 2026): Oracle Fusion AR automation — ~70% of the receivables workload automated, refunds from 3–5 days to under 24h, error rate 12% → under 1%. Shipped eHire (autonomous outbound-sales workflow). |
-| Open-source contributions | 16 upstream PRs, 3 merged, 1 approved — hands-on fixes to the LLM/ML libraries production runs on: vLLM, litellm, lancedb, qdrant-client, weaviate-python-client, instructor (full record at the bottom) |
+| Open-source contributions | 17 upstream PRs, 3 merged, 1 approved — hands-on fixes to the LLM/ML libraries production runs on: vLLM, litellm, lancedb, qdrant-client, weaviate-python-client, instructor (full record at the bottom) |
 
 ---
 
@@ -177,7 +177,7 @@ Small, dependency-light libraries my teams ship with — the pieces where the de
 ---
 
 <details>
-<summary><b>Upstream work — 16 fixes to the LLM stack production runs on: vLLM, litellm, lancedb, qdrant, weaviate, instructor and the eval libraries (3 merged, 1 approved) · plus Wi-Fi kernel patches still carried in 240+ Android trees</b></summary>
+<summary><b>Upstream work — 17 fixes to the LLM stack production runs on: vLLM, litellm, lancedb, qdrant, weaviate, instructor and the eval libraries (3 merged, 1 approved) · plus Wi-Fi kernel patches still carried in 240+ Android trees</b></summary>
 
 I fix the libraries my own agents run on, at the spots where a quiet bug becomes a wrong answer, a leaked prompt or a bad bill: cache keys that can collide, guardrails that fail open, logs that keep what was blocked, retrieval that under-fetches, errors that come back as the wrong code. Same rule as the rest of this page: fail closed, keep the audit trail clean. Every PR is a small, tested change against a real failure. Also tracked at [PORTFOLIO.md](https://github.com/shadowmodder/shadowmodder.github.io/blob/master/PORTFOLIO.md).
 
@@ -206,6 +206,7 @@ I fix the libraries my own agents run on, at the spots where a quiet bug becomes
 |---|---|---|---|
 | [fix(python): fetch minimum rank-fusion window per side in hybrid search](https://github.com/lancedb/lancedb/pull/4772) | Hybrid search pulls enough candidates from each side for rank fusion · [lancedb/lancedb](https://github.com/lancedb/lancedb) | 2026-10-31 | Open — **approved** |
 | [fix(users): report Go zero time created_at as None for db users](https://github.com/weaviate/weaviate-python-client/pull/2244) | Users with no creation time read as None, not year 0001 · [weaviate/weaviate-python-client](https://github.com/weaviate/weaviate-python-client) | 2026-11-09 | **Merged** |
+| [fix(batch): stop a stale stream sender from stealing requests after a fast reconnect](https://github.com/weaviate/weaviate-python-client/pull/2262) | After a fast reconnect, a stale batch sender can no longer steal the next request into the dead stream and silently lose the batch · [weaviate/weaviate-python-client](https://github.com/weaviate/weaviate-python-client) | 2026-11-16 | Open |
 | [fix(local): reject non-object payloads on set/overwrite_payload and collection metadata updates](https://github.com/qdrant/qdrant-client/pull/1661) | Local mode rejects malformed payloads the way the server does · [qdrant/qdrant-client](https://github.com/qdrant/qdrant-client) | 2026-11-03 | Open |
 
 **Structured output and evaluation**
