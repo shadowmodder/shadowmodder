@@ -1,12 +1,15 @@
 # Sudhir Vissa
 
-**Founder & CEO, [SAGE7 AI](https://sage7.ai) — a one-person AI company, run like a 65-person org.**
+**AI/ML engineering executive · Founder & CEO, [SAGE7 AI](https://sage7.ai)** — I build the organizations, platforms and guardrails that let AI act on money, data and customers in production.
 
-In the last twelve months, one person shipped: four papers (IEEE Access, SSRN), 25 open-source libraries, 17 upstream fixes to vLLM, litellm, lancedb and others, 5,500+ GitHub contributions, a production platform on my own Kubernetes cluster, and agent deployments inside an enterprise finance team. No team. Agents draft everything; I own every decision that touches money, data or a customer, and the audit line is written before anything acts.
+| | |
+|---|---|
+| **Orgs built** | Grew SpotHero's data & ML org from 2 teams / 15 people to 7 teams / 65 across the US and Canada. Now lead the engineering teams building Apple's AI/ML platforms, promoted from ML platform architect to tech lead to delivery leader (Infosys engagement, 2023–present). 100+ engineers, scientists and managers led across Apple, Amazon, Uptake, SpotHero and Motorola/Google/Lenovo. |
+| **Scale shipped** | Alexa's Tier-1 model-delivery services to ~1B devices at tens of thousands of TPS · Apple ML platforms behind dozens of production model use cases · Wi-Fi and connectivity in millions of Motorola and Nexus devices. |
+| **Business moved** | SpotHero IQ — one of the parking industry's first ML pricing engines, A/B-tested across metro markets — ~6× revenue on the priced inventory. 2026: ~70% of an enterprise finance team's receivables workload automated, refunds from 3–5 days to under 24h. |
+| **Recognized work** | 48 granted patents, 604 citations · IEEE Access paper on agent-memory governance · fixes merged into vLLM and weaviate. |
 
-That is also the product. SAGE7 builds the trust boundary that lets one accountable person run a fleet of agents — and lets a bank or an insurer do the same at their scale. This page is the working prototype.
-
-Before this: 20 years leading engineering and data-science organizations — Sr. Director at SpotHero (2 teams → 7, 15 → 65 people, two countries), Sr. Director of Applied ML & Data Platforms at Apple (17 engineers), Tier-1 speech services at Amazon Alexa (~1B devices), a decade of devices and connectivity at Motorola/Google/Lenovo. 48 granted patents, 604 citations.
+**Now:** SAGE7 is where I run the operating model I'd bring to a larger org. Agents draft; an accountable human owns every decision that touches money, data or a customer; the audit line is written before anything acts. Run that way, one person shipped in twelve months: four papers, 25 open-source libraries, 17 upstream fixes to vLLM, litellm, lancedb and others, a production platform on my own Kubernetes cluster, and agent deployments inside an enterprise finance team. SAGE7 sells the same trust boundary to teams — a bank or an insurer — running agents at their scale.
 
 **Operating principle:** the guardrail is the design, not the heroics. Everything below — the leadership record, the papers, the libraries — is the same idea at different scales.
 
