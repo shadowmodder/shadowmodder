@@ -1,13 +1,13 @@
 # Sudhir Vissa
 
-**AI/ML engineering executive · Founder & CEO, [SAGE7 AI](https://sage7.ai)** — I build the organizations, platforms and guardrails that let AI act on money, data and customers in production.
+**AI/ML Engineering Exec · Founder & CEO, [SAGE7 AI](https://sage7.ai)** — I build the organizations, platforms and guardrails that let AI act on money, data and customers in production.
 
 | | |
 |---|---|
 | **Orgs built** | Grew SpotHero's data & ML org from 2 teams / 15 people to 7 teams / 65 across the US and Canada. Now lead the engineering teams building Apple's AI/ML platforms, promoted from ML platform architect to tech lead to delivery leader (Infosys engagement, 2023–present). 100+ engineers, scientists and managers led across Apple, Amazon, Uptake, SpotHero and Motorola/Google/Lenovo. |
 | **Scale shipped** | Alexa's Tier-1 model-delivery services to ~1B devices at tens of thousands of TPS · Apple ML platforms behind dozens of production model use cases · Wi-Fi and connectivity in millions of Motorola and Nexus devices. |
 | **Business moved** | SpotHero IQ — one of the parking industry's first ML pricing engines, A/B-tested across metro markets — ~6× revenue on the priced inventory. 2026: ~70% of an enterprise finance team's receivables workload automated, refunds from 3–5 days to under 24h. |
-| **Recognized work** | 48 granted patents, 604 citations · IEEE Access paper on agent-memory governance · fixes merged into vLLM and weaviate. |
+| **Recognized work** | ~50 patent grants (US and international), 604 citations · IEEE Access paper on agent-memory governance · fixes merged into vLLM and weaviate. |
 
 **Now:** SAGE7 is where I run the operating model I'd bring to a larger org. Agents draft; an accountable human owns every decision that touches money, data or a customer; the audit line is written before anything acts. Run that way, one person shipped in twelve months: four papers, 25 open-source libraries, 17 upstream fixes to vLLM, litellm, lancedb and others, a production platform on my own Kubernetes cluster, and agent deployments inside an enterprise finance team. SAGE7 sells the same trust boundary to teams — a bank or an insurer — running agents at their scale.
 
@@ -42,7 +42,7 @@ What changed because I was in the room — the decision, then the result.
 | Where | Situation → decision | Result |
 |---|---|---|
 | **SpotHero** · Sr. Director, Data Science / Insights & Forecasting | Pricing was rule-based and the data org was 15 people in 2 teams. Split ML engineering from data science, stood up a platform team, built the forecasting and experimentation practice, and architected **SpotHero IQ** (precision pricing) plus time-based reservation reselling. | ~6× revenue on the priced inventory by deployment, with measured ROI. Org grew to 7 teams / 65 people across the US and Canada with predictable delivery; KPIs and forecasts set executive pricing and spend decisions. |
-| **Apple** · Sr. Director, Applied ML & Data Platforms | Model builders across the org each shipped their own way. Led 17 engineers on two teams to make the governed path the default — versioning, lineage, monitoring and rollback as platform primitives, plus a technical-debt framework. | Shorter model-deployment timelines and higher reliability across dozens of use cases. The same lineage-first idea is now the thesis of my IEEE Access paper. |
+| **Apple AI/ML Platforms** · Engineering Leader (Infosys engagement, 2023–present) | Progressed from ML platform architect to tech lead to leading the delivery teams. Model builders across the org each shipped their own way. Led 17 engineers on two teams to make the governed path the default — versioning, lineage, monitoring and rollback as platform primitives, plus a technical-debt framework. | Shorter model-deployment timelines and higher reliability across dozens of use cases. The same lineage-first idea is now the thesis of my IEEE Access paper. |
 | **Amazon Alexa** · Sr. SDM, Alexa Services | Tier-1 services delivering ASR, TTS, speech-to-intent and wake-word models to the whole fleet needed to scale and stay certified. Re-architected on DynamoDB + S3; embedded threat modeling into daily delivery. | ~1B devices served at tens of thousands of TPS with cost-based dynamic scaling; security certification retained through the rebuild. |
 | **Uptake** · Director of Engineering, Platform Data Sciences | Enterprise IIoT customers on Tier-1 model-management and DBaaS services with no operating discipline. Managed EMs, TPMs, principals, data scientists and SREs; instituted SLAs/SLOs and monthly cost/reliability reviews. | Operational-excellence controls (rate limiting, load testing, scaling) became routine; an invention-sprint program produced the lab's patent and white-paper portfolio. |
 | **Motorola → Google → Lenovo** · Engineering Manager | From kernel Wi-Fi drivers and board bring-up to running 12-engineer connectivity and R&D teams (sensors, indoor positioning, biometrics) with silicon vendors and ODMs across Asia. | A patented cloud-decision geolocation feature shipped in Android M; the group's IP portfolio and ~40 upstream Linux-kernel contributions. |
@@ -90,7 +90,7 @@ Earlier articles: *Optimizing Large-Scale MLOps Pipelines for Continuous ML Depl
 
 ### IP/Patent portfolio
 
-48 granted patents, 604 citations. What matters is how often later inventors build on them — the most-cited, by 88. The work spans biometrics, sensing, location, and audio — plus cloud and AI.
+~50 patent grants across the US and other countries, 604 citations. What matters is how often later inventors build on them — the most-cited, by 88. The work spans biometrics, sensing, location, and audio — plus cloud and AI.
 
 | Patent | Cited by |
 |---|---|
