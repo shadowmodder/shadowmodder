@@ -2,7 +2,7 @@
 
 **Founder & CEO, [SAGE7 AI](https://sage7.ai) — a one-person AI company, run like a 65-person org.**
 
-In the last twelve months, one person shipped: four papers (IEEE Access, SSRN), 25 open-source libraries, 13 upstream fixes to vLLM, litellm, mem0 and others, 5,500+ GitHub contributions, a production platform on my own Kubernetes cluster, and agent deployments inside an enterprise finance team. No team. Agents draft everything; I own every decision that touches money, data or a customer, and the audit line is written before anything acts.
+In the last twelve months, one person shipped: four papers (IEEE Access, SSRN), 25 open-source libraries, 16 upstream fixes to vLLM, litellm, lancedb and others, 5,500+ GitHub contributions, a production platform on my own Kubernetes cluster, and agent deployments inside an enterprise finance team. No team. Agents draft everything; I own every decision that touches money, data or a customer, and the audit line is written before anything acts.
 
 That is also the product. SAGE7 builds the trust boundary that lets one accountable person run a fleet of agents — and lets a bank or an insurer do the same at their scale. This page is the working prototype.
 
@@ -66,7 +66,7 @@ Also: Head of Engineering at Next Step Dynamics (Sweden) — distributed full-st
 | memharness | Neutral eval harness for agent memory — vendors shouldn't grade their own homework. Latest verified run: 1,986 questions across the suite |
 | Papers | Lineage-aware memory governance (IEEE Access), the autonomous agentic store (SSRN) — full list below |
 | SAGE7 AI | Agent trust boundary for teams shipping agents in production. Recent client work (enterprise finance team, 2026): Oracle Fusion AR automation — ~70% of the receivables workload automated, refunds from 3–5 days to under 24h, error rate 12% → under 1%. Shipped eHire (autonomous outbound-sales workflow). |
-| Open-source contributions | 13 open PRs, 1 approved, 2 merged — hands-on fixes to the LLM/ML libraries production runs on: litellm, vLLM, lancedb, mem0, qdrant-client, weaviate-python-client (full record at the bottom) |
+| Open-source contributions | 16 upstream PRs, 3 merged, 1 approved — hands-on fixes to the LLM/ML libraries production runs on: vLLM, litellm, lancedb, qdrant-client, weaviate-python-client, instructor (full record at the bottom) |
 
 ---
 
@@ -177,29 +177,49 @@ Small, dependency-light libraries my teams ship with — the pieces where the de
 ---
 
 <details>
-<summary><b>Upstream work — 13 open PRs and 2 merged fixes, to litellm, vLLM, lancedb, mem0 and others, plus 2013–15 Linux-kernel patches</b></summary>
+<summary><b>Upstream work — 16 fixes to the LLM stack production runs on: vLLM, litellm, lancedb, qdrant, weaviate, instructor and the eval libraries (3 merged, 1 approved) · plus Wi-Fi kernel patches still carried in 240+ Android trees</b></summary>
 
-Correctness and security fixes in the ML/LLM libraries production runs on, plus the kernel work underneath. Also tracked at [PORTFOLIO.md](https://github.com/shadowmodder/shadowmodder.github.io/blob/master/PORTFOLIO.md).
+I fix the libraries my own agents run on, at the spots where a quiet bug becomes a wrong answer, a leaked prompt or a bad bill: cache keys that can collide, guardrails that fail open, logs that keep what was blocked, retrieval that under-fetches, errors that come back as the wrong code. Same rule as the rest of this page: fail closed, keep the audit trail clean. Every PR is a small, tested change against a real failure. Also tracked at [PORTFOLIO.md](https://github.com/shadowmodder/shadowmodder.github.io/blob/master/PORTFOLIO.md).
 
-| Contribution | Repository | Date | Status |
+**Serving — [vllm-project/vllm](https://github.com/vllm-project/vllm)**
+
+| Fix | What changes for people running it | Opened | Status |
 |---|---|---|---|
-| [[Bugfix][Compilation] Remove AllReduceFusionPass.__del__ destroying the shared FlashInfer workspace](https://github.com/vllm-project/vllm/pull/67643) | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 2026-11-14 | Open |
-| [fix(proxy): fail startup when a custom guardrail names an instance](https://github.com/BerriAI/litellm/pull/50848) | [BerriAI/litellm](https://github.com/BerriAI/litellm) | 2026-11-10 | Open |
-| [fix(python): fetch minimum rank-fusion window per side in hybrid search](https://github.com/lancedb/lancedb/pull/4772) | [lancedb/lancedb](https://github.com/lancedb/lancedb) | 2026-10-30 | Open — approved |
-| [fix(users): report Go zero time created_at as None for db users](https://github.com/weaviate/weaviate-python-client/pull/2244) | [weaviate/weaviate-python-client](https://github.com/weaviate/weaviate-python-client) | 2026-11-08 | Merged |
-| [[Bugfix][Multimodal] Domain-separate content digests and caller uuids in mm hashes](https://github.com/vllm-project/vllm/pull/66473) | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 2026-11-08 | Merged |
-| [[Frontend][Responses] Reject empty assistant message content with 400 instead of 500](https://github.com/vllm-project/vllm/pull/66475) | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 2026-11-08 | Open |
-| [fix(responses): keep overlong system prompts in input on the chat to responses bridge](https://github.com/BerriAI/litellm/pull/50328) | [BerriAI/litellm](https://github.com/BerriAI/litellm) | 2026-11-05 | Open |
-| [fix(proxy): redact guardrail-blocked request body from spend logs](https://github.com/BerriAI/litellm/pull/50214) | [BerriAI/litellm](https://github.com/BerriAI/litellm) | 2026-11-05 | Open |
-| [test(router): fix direct-call num_retries assertion to match SDK-retry behavior](https://github.com/BerriAI/litellm/pull/49584) | [BerriAI/litellm](https://github.com/BerriAI/litellm) | 2026-11-01 | Open |
-| [fix(local): reject non-object payloads on set/overwrite_payload and collection metadata updates](https://github.com/qdrant/qdrant-client/pull/1661) | [qdrant/qdrant-client](https://github.com/qdrant/qdrant-client) | 2026-11-03 | Open |
-| [[Frontend][Responses] Accept input_audio content parts in user messages (#47659)](https://github.com/vllm-project/vllm/pull/64851) | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 2026-10-30 | Open |
-| [fix: GroundedProposer ignores hand-labeled demos](https://github.com/stanfordnlp/dspy/pull/9979) | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | 2026-07-05 | Open |
-| [feat(metrics): add traditional IR metrics — NDCGScore, MRRScore, PrecisionAtK, RecallAtK](https://github.com/explodinggradients/ragas/pull/2816) | [explodinggradients/ragas](https://github.com/explodinggradients/ragas) | 2026-07-05 | Open |
-| [feat(metrics): add ECE and RMS calibration error metrics](https://github.com/EleutherAI/lm-evaluation-harness/pull/3913) | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | 2026-07-05 | Open |
-| [fix(providers): retry empty completion choices across handlers](https://github.com/567-labs/instructor/commit/8da7a13f1babc7c8c6c2896b3734f1f1ae5e65b2) — co-authored, landed via maintainer's #2902 | [567-labs/instructor](https://github.com/567-labs/instructor) | 2026-11-05 | Merged |
-| [Add Dockerfile](https://github.com/staart/ui/commit/95e2d6dba73aabb0f37f3a236791726cb726b96a) — merged as PR #1131 | [staart/ui](https://github.com/staart/ui) | 2021-05-09 | Merged |
-Kernel work (2013–2015): ~40 Wi-Fi and connectivity patches in Motorola's Android trees — Ghost (Moto X 2013), Clark/MSM8992 (Moto X 2015), MSM8226 (Moto G), Shamu (Nexus 6) — still carried in up to 237 community trees. Authored as `shadowmodder`, `Sudhir C Vissa` and `fjdw67`.
+| [[Bugfix][Multimodal] Domain-separate content digests and caller uuids in mm hashes](https://github.com/vllm-project/vllm/pull/66473) | Caller-supplied uuids and content digests no longer share one hash space in the multimodal cache | 2026-11-09 | **Merged** |
+| [[Bugfix][Compilation] Remove AllReduceFusionPass.\_\_del\_\_ destroying the shared FlashInfer workspace](https://github.com/vllm-project/vllm/pull/67643) | Tearing down one compile pass no longer frees the FlashInfer workspace other passes still use | 2026-11-14 | Open |
+| [[Frontend][Responses] Reject empty assistant message content with 400 instead of 500](https://github.com/vllm-project/vllm/pull/66475) | A bad client request returns a 400 the caller can act on, not a server error | 2026-11-09 | Open |
+| [[Frontend][Responses] Accept input_audio content parts in user messages](https://github.com/vllm-project/vllm/pull/64851) | Audio inputs work through the Responses API (vLLM issue #47659) | 2026-10-31 | Open |
+
+**Gateway and guardrails — [BerriAI/litellm](https://github.com/BerriAI/litellm)**
+
+| Fix | What changes for people running it | Opened | Status |
+|---|---|---|---|
+| [fix(proxy): redact guardrail-blocked request body from spend logs](https://github.com/BerriAI/litellm/pull/50214) | A request the guardrail blocked is no longer stored verbatim in spend logs | 2026-11-05 | Open |
+| [fix(proxy): fail startup when a custom guardrail names an instance](https://github.com/BerriAI/litellm/pull/50848) | A misconfigured custom guardrail stops the proxy at startup instead of surfacing at request time | 2026-11-10 | Open |
+| [fix(main): reject chat completions on decisions-only deployments](https://github.com/BerriAI/litellm/pull/51005) | Chat calls routed to a decisions-only deployment are refused up front | 2026-11-10 | Open |
+| [fix(responses): keep overlong system prompts in input on the chat to responses bridge](https://github.com/BerriAI/litellm/pull/50328) | Long system prompts survive the chat → Responses bridge instead of being dropped | 2026-11-06 | Open |
+| [test(router): fix direct-call num_retries assertion to match SDK-retry behavior](https://github.com/BerriAI/litellm/pull/49584) | Router retry test asserts the behavior the SDK actually has | 2026-11-01 | Open |
+
+**Retrieval and vector stores**
+
+| Fix | What changes for people running it | Opened | Status |
+|---|---|---|---|
+| [fix(python): fetch minimum rank-fusion window per side in hybrid search](https://github.com/lancedb/lancedb/pull/4772) | Hybrid search pulls enough candidates from each side for rank fusion · [lancedb/lancedb](https://github.com/lancedb/lancedb) | 2026-10-31 | Open — **approved** |
+| [fix(users): report Go zero time created_at as None for db users](https://github.com/weaviate/weaviate-python-client/pull/2244) | Users with no creation time read as None, not year 0001 · [weaviate/weaviate-python-client](https://github.com/weaviate/weaviate-python-client) | 2026-11-09 | **Merged** |
+| [fix(local): reject non-object payloads on set/overwrite_payload and collection metadata updates](https://github.com/qdrant/qdrant-client/pull/1661) | Local mode rejects malformed payloads the way the server does · [qdrant/qdrant-client](https://github.com/qdrant/qdrant-client) | 2026-11-03 | Open |
+
+**Structured output and evaluation**
+
+| Fix | What changes for people running it | Opened | Status |
+|---|---|---|---|
+| [fix(providers): retry empty completion choices across handlers](https://github.com/567-labs/instructor/pull/2902) | Empty provider completions are retried instead of failing; co-authored, landed via the maintainer's consolidation of my #2864 · [567-labs/instructor](https://github.com/567-labs/instructor) | 2026-11-01 | **Merged** |
+| [fix: GroundedProposer ignores hand-labeled demos](https://github.com/stanfordnlp/dspy/pull/9979) | Hand-labeled demos reach the prompt optimizer instead of being skipped · [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | 2026-07-05 | Open |
+| [feat(metrics): add traditional IR metrics — NDCGScore, MRRScore, PrecisionAtK, RecallAtK](https://github.com/vibrantlabsai/ragas/pull/2816) | Classic ranking metrics alongside LLM-judged RAG metrics · [vibrantlabsai/ragas](https://github.com/vibrantlabsai/ragas) | 2026-07-05 | Open |
+| [feat(metrics): add ECE and RMS calibration error metrics](https://github.com/EleutherAI/lm-evaluation-harness/pull/3913) | Measures whether a model's confidence matches its accuracy · [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | 2026-07-05 | Open |
+
+**Earlier:** [Add Dockerfile](https://github.com/staart/ui/pull/1131) to [staart/ui](https://github.com/staart/ui) (2021, merged).
+
+**Kernel work, 2013–2015.** Wi-Fi and connectivity patches from my Motorola years — roaming events (LFR), PNO scheduled scan, DTIM beacon interval, SoftAP country code, BCMDHD and CNSS bring-up — for the Moto X (Ghost, 2013), Nexus 6 (Shamu) and Moto X Style/Pure (Clark, MSM8992). They are still carried in [LineageOS](https://github.com/LineageOS/android_kernel_motorola_msm8992), CyanogenMod, AOSPA, SlimRoms, OmniROM and 240+ community kernel trees. Authored as `shadowmodder` and `Sudhir C Vissa`.
 
 Full list of the upstream commits carrying my name: [GitHub commit search](https://github.com/search?q=%22Sudhir+Vissa%22&type=commits).
 
