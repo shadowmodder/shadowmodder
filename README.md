@@ -2,7 +2,7 @@
 
 **Founder & CEO, [SAGE7 AI](https://sage7.ai) — a one-person AI company, run like a 65-person org.**
 
-In the last twelve months, one person shipped: four papers (IEEE Access, SSRN), 25 open-source libraries, 16 upstream fixes to vLLM, litellm, lancedb and others, 5,500+ GitHub contributions, a production platform on my own Kubernetes cluster, and agent deployments inside an enterprise finance team. No team. Agents draft everything; I own every decision that touches money, data or a customer, and the audit line is written before anything acts.
+In the last twelve months, one person shipped: four papers (IEEE Access, SSRN), 25 open-source libraries, 17 upstream fixes to vLLM, litellm, lancedb and others, 5,500+ GitHub contributions, a production platform on my own Kubernetes cluster, and agent deployments inside an enterprise finance team. No team. Agents draft everything; I own every decision that touches money, data or a customer, and the audit line is written before anything acts.
 
 That is also the product. SAGE7 builds the trust boundary that lets one accountable person run a fleet of agents — and lets a bank or an insurer do the same at their scale. This page is the working prototype.
 
