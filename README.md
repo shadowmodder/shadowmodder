@@ -9,7 +9,7 @@
 | **Business moved** | SpotHero IQ — one of the parking industry's first ML pricing engines, A/B-tested across metro markets — ~6× revenue on the priced inventory. 2026: ~70% of an enterprise finance team's receivables workload automated, refunds from 3–5 days to under 24h. |
 | **Recognized work** | ~50 patent grants (US and international), 604 citations · IEEE Access paper on agent-memory governance · fixes merged into vLLM and weaviate. |
 
-**Now:** SAGE7 is where I run the operating model I'd bring to a larger org. Agents draft; an accountable human owns every decision that touches money, data or a customer; the audit line is written before anything acts. Run that way, one person shipped in twelve months: four papers, 25 open-source libraries, 17 upstream fixes to vLLM, litellm, lancedb and others, a production platform on my own Kubernetes cluster, and agent deployments inside an enterprise finance team. SAGE7 sells the same trust boundary to teams — a bank or an insurer — running agents at their scale.
+**Now:** SAGE7 is where I run the operating model I'd bring to a larger org. Agents draft; an accountable human owns every decision that touches money, data or a customer; the audit line is written before anything acts. Run that way, one person shipped in twelve months: four papers, 25 open-source libraries, 21 upstream fixes to vLLM, litellm, lancedb and others, a production platform on my own Kubernetes cluster, and agent deployments inside an enterprise finance team. SAGE7 sells the same trust boundary to teams — a bank or an insurer — running agents at their scale.
 
 **Operating principle:** the guardrail is the design, not the heroics. Everything below — the leadership record, the papers, the libraries — is the same idea at different scales.
 
@@ -69,7 +69,7 @@ Also: Head of Engineering at Next Step Dynamics (Sweden) — distributed full-st
 | memharness | Neutral eval harness for agent memory — vendors shouldn't grade their own homework. Latest verified run: 1,986 questions across the suite |
 | Papers | Lineage-aware memory governance (IEEE Access), the autonomous agentic store (SSRN) — full list below |
 | SAGE7 AI | Agent trust boundary for teams shipping agents in production. Recent client work (enterprise finance team, 2026): Oracle Fusion AR automation — ~70% of the receivables workload automated, refunds from 3–5 days to under 24h, error rate 12% → under 1%. Shipped eHire (autonomous outbound-sales workflow). |
-| Open-source contributions | 17 upstream PRs, 3 merged, 1 approved — hands-on fixes to the LLM/ML libraries production runs on: vLLM, litellm, lancedb, qdrant-client, weaviate-python-client, instructor (full record at the bottom) |
+| Open-source contributions | 21 upstream PRs, 3 merged, 1 approved — hands-on fixes to the LLM/ML libraries production runs on: vLLM, litellm, lancedb, qdrant-client, weaviate-python-client, instructor (full record at the bottom) |
 
 ---
 
@@ -180,7 +180,7 @@ Small, dependency-light libraries my teams ship with — the pieces where the de
 ---
 
 <details>
-<summary><b>Upstream work — 17 fixes to the LLM stack production runs on: vLLM, litellm, lancedb, qdrant, weaviate, instructor and the eval libraries (3 merged, 1 approved) · plus Wi-Fi kernel patches still carried in 240+ Android trees</b></summary>
+<summary><b>Upstream work — 21 fixes to the LLM stack production runs on: vLLM, litellm, lancedb, qdrant, weaviate, instructor and the eval libraries (3 merged, 1 approved) · plus Wi-Fi kernel patches still carried in 240+ Android trees</b></summary>
 
 I fix the libraries my own agents run on, at the spots where a quiet bug becomes a wrong answer, a leaked prompt or a bad bill: cache keys that can collide, guardrails that fail open, logs that keep what was blocked, retrieval that under-fetches, errors that come back as the wrong code. Same rule as the rest of this page: fail closed, keep the audit trail clean. Every PR is a small, tested change against a real failure. Also tracked at [PORTFOLIO.md](https://github.com/shadowmodder/shadowmodder.github.io/blob/master/PORTFOLIO.md).
 
@@ -202,6 +202,9 @@ I fix the libraries my own agents run on, at the spots where a quiet bug becomes
 | [fix(main): reject chat completions on decisions-only deployments](https://github.com/BerriAI/litellm/pull/51005) | Chat calls routed to a decisions-only deployment are refused up front | 2026-11-10 | Open |
 | [fix(responses): keep overlong system prompts in input on the chat to responses bridge](https://github.com/BerriAI/litellm/pull/50328) | Long system prompts survive the chat → Responses bridge instead of being dropped | 2026-11-06 | Open |
 | [test(router): fix direct-call num_retries assertion to match SDK-retry behavior](https://github.com/BerriAI/litellm/pull/49584) | Router retry test asserts the behavior the SDK actually has | 2026-11-01 | Open |
+| [fix(proxy): refuse callback delete when a config-owned list still holds the callback](https://github.com/BerriAI/litellm/pull/52479) | Deleting a callback the config file still owns is refused up front instead of reporting success while the callback stays active | 2026-11-18 | Open |
+| [fix(decisions): stop relabeling out-of-order OpenAI Decisions answers](https://github.com/BerriAI/litellm/pull/52480) | Out-of-order Decisions answers are matched back to their questions by name instead of being relabeled with the wrong scores | 2026-11-18 | Open |
+| [fix(fal_ai): raise BadRequestError when an image edit request has no image](https://github.com/BerriAI/litellm/pull/52529) | An image edit request with no image returns a 400 the caller can act on, not a bare 500 | 2026-11-18 | Open |
 
 **Retrieval and vector stores**
 
@@ -210,6 +213,7 @@ I fix the libraries my own agents run on, at the spots where a quiet bug becomes
 | [fix(python): fetch minimum rank-fusion window per side in hybrid search](https://github.com/lancedb/lancedb/pull/4772) | Hybrid search pulls enough candidates from each side for rank fusion · [lancedb/lancedb](https://github.com/lancedb/lancedb) | 2026-10-31 | Open — **approved** |
 | [fix(users): report Go zero time created_at as None for db users](https://github.com/weaviate/weaviate-python-client/pull/2244) | Users with no creation time read as None, not year 0001 · [weaviate/weaviate-python-client](https://github.com/weaviate/weaviate-python-client) | 2026-11-09 | **Merged** |
 | [fix(batch): stop a stale stream sender from stealing requests after a fast reconnect](https://github.com/weaviate/weaviate-python-client/pull/2262) | After a fast reconnect, a stale batch sender can no longer steal the next request into the dead stream and silently lose the batch · [weaviate/weaviate-python-client](https://github.com/weaviate/weaviate-python-client) | 2026-11-16 | Open |
+| [fix(batch): report a per-object encoding failure instead of failing the whole batch](https://github.com/weaviate/weaviate-python-client/pull/2267) | One unencodable object in a batch is reported on its own instead of failing the whole batch or silently dropping the objects behind it · [weaviate/weaviate-python-client](https://github.com/weaviate/weaviate-python-client) | 2026-11-18 | Open |
 | [fix(local): reject non-object payloads on set/overwrite_payload and collection metadata updates](https://github.com/qdrant/qdrant-client/pull/1661) | Local mode rejects malformed payloads the way the server does · [qdrant/qdrant-client](https://github.com/qdrant/qdrant-client) | 2026-11-03 | Open |
 
 **Structured output and evaluation**
