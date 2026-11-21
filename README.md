@@ -200,11 +200,11 @@ I fix the libraries my own agents run on, at the spots where a quiet bug becomes
 | [fix(proxy): redact guardrail-blocked request body from spend logs](https://github.com/BerriAI/litellm/pull/50214) | A request the guardrail blocked is no longer stored verbatim in spend logs | 2026-11-05 | Open |
 | [fix(proxy): fail startup when a custom guardrail names an instance](https://github.com/BerriAI/litellm/pull/50848) | A misconfigured custom guardrail stops the proxy at startup instead of surfacing at request time | 2026-11-10 | Open |
 | [fix(main): reject chat completions on decisions-only deployments](https://github.com/BerriAI/litellm/pull/51005) | Chat calls routed to a decisions-only deployment are refused up front | 2026-11-10 | Open |
-| [fix(responses): keep overlong system prompts in input on the chat to responses bridge](https://github.com/BerriAI/litellm/pull/50328) | Long system prompts survive the chat → Responses bridge instead of being dropped | 2026-11-06 | Open |
 | [test(router): fix direct-call num_retries assertion to match SDK-retry behavior](https://github.com/BerriAI/litellm/pull/49584) | Router retry test asserts the behavior the SDK actually has | 2026-11-01 | Open |
 | [fix(proxy): refuse callback delete when a config-owned list still holds the callback](https://github.com/BerriAI/litellm/pull/52479) | Deleting a callback the config file still owns is refused up front instead of reporting success while the callback stays active | 2026-11-18 | Open |
-| [fix(decisions): stop relabeling out-of-order OpenAI Decisions answers](https://github.com/BerriAI/litellm/pull/52480) | Out-of-order Decisions answers are matched back to their questions by name instead of being relabeled with the wrong scores | 2026-11-18 | Open |
 | [fix(fal_ai): raise BadRequestError when an image edit request has no image](https://github.com/BerriAI/litellm/pull/52529) | An image edit request with no image returns a 400 the caller can act on, not a bare 500 | 2026-11-18 | Open |
+| [fix(azure_ai): raise BadRequestError for invalid FLUX 2 image edit input](https://github.com/BerriAI/litellm/pull/52547) | A FLUX 2 image edit with bad input returns a 400 instead of a retryable 500 | 2026-11-18 | Open |
+| [fix(vertex_ai): keep the thought signature on a replayed assistant image](https://github.com/BerriAI/litellm/pull/52554) | A generated image replayed as conversation history keeps the thought signature it belongs with instead of arriving unsigned | 2026-11-18 | Open |
 
 **Retrieval and vector stores**
 
