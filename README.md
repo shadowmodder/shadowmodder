@@ -9,7 +9,7 @@
 | **Business moved** | SpotHero IQ — one of the parking industry's first ML pricing engines, A/B-tested across metro markets — ~6× revenue on the priced inventory. 2026: ~70% of an enterprise finance team's receivables workload automated, refunds from 3–5 days to under 24h. |
 | **Recognized work** | ~50 patent grants (US and international), 604 citations · IEEE Access paper on agent-memory governance · fixes merged into vLLM and weaviate. |
 
-**Now:** SAGE7 is where I run the operating model I'd bring to a larger org. Agents draft; an accountable human owns every decision that touches money, data or a customer; the audit line is written before anything acts. Run that way, one person shipped in twelve months: four papers, 25 open-source libraries, 21 upstream fixes to vLLM, litellm, lancedb and others, a production platform on my own Kubernetes cluster, and agent deployments inside an enterprise finance team. SAGE7 sells the same trust boundary to teams — a bank or an insurer — running agents at their scale.
+**Now:** SAGE7 is where I run the operating model I'd bring to a larger org. Agents draft; an accountable human owns every decision that touches money, data or a customer; the audit line is written before anything acts. Run that way, one person shipped in twelve months: four papers, 25 open-source libraries, 19 upstream fixes to vLLM, litellm, lancedb and others, a production platform on my own Kubernetes cluster, and agent deployments inside an enterprise finance team. SAGE7 sells the same trust boundary to teams — a bank or an insurer — running agents at their scale.
 
 **Operating principle:** the guardrail is the design, not the heroics. Everything below — the leadership record, the papers, the libraries — is the same idea at different scales.
 
@@ -69,7 +69,7 @@ Also: Head of Engineering at Next Step Dynamics (Sweden) — distributed full-st
 | memharness | Neutral eval harness for agent memory — vendors shouldn't grade their own homework. Latest verified run: 1,986 questions across the suite |
 | Papers | Lineage-aware memory governance (IEEE Access), the autonomous agentic store (SSRN) — full list below |
 | SAGE7 AI | Agent trust boundary for teams shipping agents in production. Recent client work (enterprise finance team, 2026): Oracle Fusion AR automation — ~70% of the receivables workload automated, refunds from 3–5 days to under 24h, error rate 12% → under 1%. Shipped eHire (autonomous outbound-sales workflow). |
-| Open-source contributions | 21 upstream PRs, 3 merged, 1 approved — hands-on fixes to the LLM/ML libraries production runs on: vLLM, litellm, lancedb, qdrant-client, weaviate-python-client, instructor (full record at the bottom) |
+| Open-source contributions | 19 upstream PRs, 3 merged, 1 approved — hands-on fixes to the LLM/ML libraries production runs on: vLLM, litellm, lancedb, qdrant-client, weaviate-python-client, instructor (full record at the bottom) |
 
 ---
 
@@ -180,7 +180,7 @@ Small, dependency-light libraries my teams ship with — the pieces where the de
 ---
 
 <details>
-<summary><b>Upstream work — 21 fixes to the LLM stack production runs on: vLLM, litellm, lancedb, qdrant, weaviate, instructor and the eval libraries (3 merged, 1 approved) · plus Wi-Fi kernel patches still carried in 240+ Android trees</b></summary>
+<summary><b>Upstream work — 19 fixes to the LLM stack production runs on: vLLM, litellm, lancedb, qdrant, weaviate, instructor and the eval libraries (3 merged, 1 approved) · plus Wi-Fi kernel patches still carried in 240+ Android trees</b></summary>
 
 I fix the libraries my own agents run on, at the spots where a quiet bug becomes a wrong answer, a leaked prompt or a bad bill: cache keys that can collide, guardrails that fail open, logs that keep what was blocked, retrieval that under-fetches, errors that come back as the wrong code. Same rule as the rest of this page: fail closed, keep the audit trail clean. Every PR is a small, tested change against a real failure. Also tracked at [PORTFOLIO.md](https://github.com/shadowmodder/shadowmodder.github.io/blob/master/PORTFOLIO.md).
 
@@ -190,7 +190,6 @@ I fix the libraries my own agents run on, at the spots where a quiet bug becomes
 |---|---|---|---|
 | [[Bugfix][Multimodal] Domain-separate content digests and caller uuids in mm hashes](https://github.com/vllm-project/vllm/pull/66473) | Caller-supplied uuids and content digests no longer share one hash space in the multimodal cache | 2026-11-09 | **Merged** |
 | [[Bugfix][Compilation] Remove AllReduceFusionPass.\_\_del\_\_ destroying the shared FlashInfer workspace](https://github.com/vllm-project/vllm/pull/67643) | Tearing down one compile pass no longer frees the FlashInfer workspace other passes still use | 2026-11-14 | Open |
-| [[Frontend][Responses] Reject empty assistant message content with 400 instead of 500](https://github.com/vllm-project/vllm/pull/66475) | A bad client request returns a 400 the caller can act on, not a server error | 2026-11-09 | Open |
 | [[Frontend][Responses] Accept input_audio content parts in user messages](https://github.com/vllm-project/vllm/pull/64851) | Audio inputs work through the Responses API (vLLM issue #47659) | 2026-10-31 | Open |
 
 **Gateway and guardrails — [BerriAI/litellm](https://github.com/BerriAI/litellm)**
@@ -201,7 +200,6 @@ I fix the libraries my own agents run on, at the spots where a quiet bug becomes
 | [fix(proxy): fail startup when a custom guardrail names an instance](https://github.com/BerriAI/litellm/pull/50848) | A misconfigured custom guardrail stops the proxy at startup instead of surfacing at request time | 2026-11-10 | Open |
 | [fix(main): reject chat completions on decisions-only deployments](https://github.com/BerriAI/litellm/pull/51005) | Chat calls routed to a decisions-only deployment are refused up front | 2026-11-10 | Open |
 | [test(router): fix direct-call num_retries assertion to match SDK-retry behavior](https://github.com/BerriAI/litellm/pull/49584) | Router retry test asserts the behavior the SDK actually has | 2026-11-01 | Open |
-| [fix(proxy): refuse callback delete when a config-owned list still holds the callback](https://github.com/BerriAI/litellm/pull/52479) | Deleting a callback the config file still owns is refused up front instead of reporting success while the callback stays active | 2026-11-18 | Open |
 | [fix(fal_ai): raise BadRequestError when an image edit request has no image](https://github.com/BerriAI/litellm/pull/52529) | An image edit request with no image returns a 400 the caller can act on, not a bare 500 | 2026-11-18 | Open |
 | [fix(azure_ai): raise BadRequestError for invalid FLUX 2 image edit input](https://github.com/BerriAI/litellm/pull/52547) | A FLUX 2 image edit with bad input returns a 400 instead of a retryable 500 | 2026-11-18 | Open |
 | [fix(vertex_ai): keep the thought signature on a replayed assistant image](https://github.com/BerriAI/litellm/pull/52554) | A generated image replayed as conversation history keeps the thought signature it belongs with instead of arriving unsigned | 2026-11-18 | Open |
